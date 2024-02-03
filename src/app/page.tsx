@@ -38,7 +38,7 @@ export default function Home() {
             More details to come. Click below to receive updates, calendar
             invites and important information via our wedding newsletter.
           </p> */}
-          <Button text="Save Our Date" />
+          {/* <Button text="Save Our Date" /> */}
           <div className={cn(s.top, s.tiny)}>
             <span>Ann</span>
             <span>Arbor</span>

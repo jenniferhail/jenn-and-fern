@@ -32,7 +32,7 @@ export default function Home() {
             actualizaciones, invitaciones de calendario e información importante
             a través de nuestro boletín de bodas.
           </p> */}
-        <Button text="Guardar nuestra fecha" />
+        {/* <Button text="Guardar nuestra fecha" /> */}
         <div className={cn(s.top, s.tiny)}>
           <span>Ann</span>
           <span>Arbor</span>
