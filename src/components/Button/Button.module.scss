@@ -12,11 +12,7 @@
   font-size: 10.2px;
   line-height: 1;
   letter-spacing: 0.25em;
-  margin-bottom: 1rem;
-
-  @include m.breakpoint(v.$md) {
-    margin-bottom: 2rem;
-  }
+  margin-bottom: 2rem;
 
   &:active {
     box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
