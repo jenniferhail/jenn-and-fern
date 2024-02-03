@@ -28,9 +28,12 @@ export async function PUT(request: Request) {
       )
     }
   } catch (error) {
-    console.error('SendGrid request error:', error)
-    console.error('SendGrid request error details:', error.response.body.errors)
-    // console.error('Request contained:', req)
+    const typedError = error as { response: { body: { errors: any } } }
+    console.error('SendGrid request error:', typedError)
+    console.error(
+      'SendGrid request error details:',
+      typedError.response.body.errors
+    )
     return NextResponse.json(
       { message: 'Failed to update contacts' },
       { status: 500 }
