@@ -1,0 +1,21 @@
+$sans: 'Authentic Sans';
+$serif: 'Picnic Club';
+$main: 'TT Ramillas';
+$script: 'Bellissima Script Pro', cursive;
+
+// Breakpoints
+$mobile: 480px;
+$tablet: 768px;
+$laptop: 1024px;
+$desktop-sm: 1200px;
+$desktop: 1440px;
+$sm: $mobile;
+$md: $tablet;
+$lg: $laptop;
+$xl: $desktop;
+$breakpoints: (
+  sm: $sm,
+  md: $md,
+  lg: $lg,
+  xl: $xl,
+);

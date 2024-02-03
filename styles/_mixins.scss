@@ -1,0 +1,128 @@
+@use 'variables' as v;
+
+@mixin absolute-fill {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+@mixin ada-hide {
+  height: 1px;
+  left: -100%;
+  opacity: 0;
+  pointer-events: none;
+  position: absolute;
+  top: -100%;
+  width: 1px;
+  z-index: -1;
+}
+
+@mixin breakpoint($minimum) {
+  @media (min-width: $minimum) {
+    @content;
+  }
+}
+
+@mixin breakpoint-max($maximum) {
+  $_max-adjust: $maximum - 1;
+  @media (max-width: $_max-adjust) {
+    @content;
+  }
+}
+
+@mixin circle($size: v.$circle) {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  text-align: left;
+
+  &::after {
+    border: v.$border;
+    border-radius: 50%;
+    content: '';
+    flex: 0 0 $size;
+    height: $size;
+    margin-left: v.$spacer2;
+    transition: background 200ms ease-in-out;
+    width: $size;
+  }
+}
+
+// Centered container with a max-width and gutters on both sides
+@mixin container {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: v.$max-width + 2 * v.$gutter;
+  padding-left: v.$gutter;
+  padding-right: v.$gutter;
+
+  @include breakpoint(v.$md) {
+    max-width: v.$max-width + 2 * v.$gutter-md;
+    padding-left: v.$gutter-md;
+    padding-right: v.$gutter-md;
+  }
+}
+
+@mixin hover {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
+
+@mixin remove-list-formatting {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+@mixin site-padding {
+  @include breakpoint-max(v.$md) {
+    padding-right: v.$mobile-padding;
+    padding-left: v.$mobile-padding;
+  }
+
+  @include breakpoint(v.$md) {
+    padding-right: v.$padding;
+    padding-left: v.$padding;
+  }
+}
+
+@mixin typography($font: v.$font-primary, $size, $height, $spacing) {
+  font-family: $font;
+  font-size: map-get($size, sm);
+  line-height: map-get($height, sm);
+
+  @each $key, $breakpoint in v.$breakpoints {
+    @include breakpoint($breakpoint) {
+      font-size: map-get($size, $key);
+      letter-spacing: map-get($spacing, $key);
+      line-height: map-get($height, $key);
+    }
+  }
+}
+
+@mixin underline-hover($dark: false) {
+  background: url('/images/underline-transparent.png') repeat-x 100% 100%;
+  transition: all 200ms ease-in-out;
+
+  @include hover {
+    @if $dark {
+      background: url('/images/underline-black.png') repeat-x 100% 82%;
+    } @else {
+      background: url('/images/underline-white.jpeg') repeat-x 100% 82%;
+    }
+  }
+}
+
+@mixin image {
+  border-radius: 13px;
+  height: 0;
+  overflow: hidden;
+  padding-bottom: calc(3 / 2.2) * 100%;
+  position: relative;
+  width: 100%;
+}

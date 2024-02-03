@@ -1,0 +1,57 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Authentic Sans';
+  font-weight: normal;
+  src: url('/fonts/AUTHENTICSans-90.woff') format('woff'),
+    url('/fonts/AUTHENTICSans-90.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Authentic Sans';
+  font-weight: bold;
+  src: url('/fonts/AUTHENTICSans-130.woff') format('woff'),
+    url('/fonts/AUTHENTICSans-130.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Picnic Club';
+  font-weight: normal;
+  src: url('/fonts/ThePicnicClub-Regular.woff') format('woff'),
+    url('/fonts/ThePicnicClub-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Picnic Club';
+  font-weight: normal;
+  font-style: italic;
+  src: url('/fonts/ThePicnicClub-Italic.woff') format('woff'),
+    url('/fonts/ThePicnicClub-Italic.woff2') format('woff2');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'TT Ramillas';
+  font-weight: normal;
+  src: url('/fonts/TTRamillas ExtraLight.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'TT Ramillas';
+  font-weight: normal;
+  font-style: italic;
+  src: url('/fonts/TTRamillas ExtraLight-Italic.woff') format('woff');
+}
+
+@font-face {
+  font-display: swap;
+  font-family: 'Bellissima Script Pro';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/fonts/Bellissima.woff2') format('woff2'),
+    url('/fonts/Bellissima.woff') format('woff'),
+    url('/fonts/Bellissima.ttf') format('truetype');
+}
