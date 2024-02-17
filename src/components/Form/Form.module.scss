@@ -1,0 +1,42 @@
+@use '../styles/variables' as v;
+@use '../styles/mixins' as m;
+
+.form {
+  padding: 2rem 0;
+
+  label {
+    display: block;
+    font-weight: 600;
+  }
+
+  input {
+    border: none;
+    height: 32px;
+    margin: 0.5rem 0 1rem;
+    text-align: center;
+    width: 100%;
+
+    &:focus-visible {
+      outline: 1px solid black;
+    }
+  }
+
+  .btn {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid;
+    cursor: pointer;
+    padding: 1.2rem 2rem 1rem;
+    text-transform: uppercase;
+    font-family: v.$sans;
+    font-size: 10.2px;
+    line-height: 1;
+    letter-spacing: 0.25em;
+    margin: 1rem 0 0;
+
+    &:active {
+      box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.2);
+      transform: translateY(1px);
+    }
+  }
+}
