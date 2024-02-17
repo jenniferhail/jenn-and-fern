@@ -2,10 +2,8 @@
 @use '../../../styles/mixins' as m;
 
 .tiny {
-  font-family: v.$sans;
-  font-size: 10.2px;
-  letter-spacing: 0.25em;
-  line-height: 1.7em;
+  @include m.type-tiny;
+  margin-bottom: 4rem;
 }
 
 .top {
@@ -26,6 +24,14 @@
   margin: 0 auto;
   max-width: 500px;
   -webkit-font-smoothing: antialiased;
+
+  h1 {
+    margin: 2rem auto 1rem;
+
+    @include m.breakpoint(v.$md) {
+      margin: 4rem auto 1rem;
+    }
+  }
 
   p {
     line-height: 1.5;

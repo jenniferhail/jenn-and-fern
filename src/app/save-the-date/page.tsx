@@ -11,6 +11,7 @@ export default function Home() {
           <h1>
             <i>August 10, 2024</i>
           </h1>
+          <h2 className={s.tiny}>Ann Arbor, MI</h2>
           <p>
             In place of traditionally mailed paper goods, we&apos;re going
             digital and using this e-mail list for everything you need to know

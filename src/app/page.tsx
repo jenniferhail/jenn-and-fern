@@ -28,7 +28,7 @@ export default function Home() {
         </div>
 
         <div className={s.bottom}>
-          <Link href={`/save-the-date`} className={s.btn}>
+          <Link href={`/save-the-date`} className="button">
             Save Our Date
           </Link>
           <div className={cn(s.top, s.tiny)}>

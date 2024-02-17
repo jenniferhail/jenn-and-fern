@@ -13,19 +13,18 @@
   text-align: center;
 
   padding: 1.5rem 1.75rem;
-  background-color: rgba(242, 240, 237, 1);
+  background-color: #f2f0ed;
+  border-radius: 16px;
 
   h1 {
     font-family: v.$main;
     font-size: 30px;
     font-weight: 200;
     letter-spacing: -0.5px;
-    margin: 2rem auto;
 
     @include m.breakpoint(v.$md) {
       font-size: 42px;
       line-height: 60px;
-      margin: 4rem auto;
     }
 
     i {
