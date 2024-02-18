@@ -21,9 +21,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <main className={s.main}>
-          <div className={s.language}>
+          {/* <div className={s.language}>
             <Link href="/">EN</Link> • <Link href="/es">ES</Link>
-          </div>
+          </div> */}
           {children}
         </main>
       </body>
