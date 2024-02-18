@@ -27,7 +27,7 @@ export default function Home() {
 
           <p>
             To start, fill in your latest contact info below, so we can keep you
-            in the loop, and after it&apos;s all said and done, send you a thank
+            in the loop and—after it&apos;s all said and done—send you a thank
             you card for celebrating the best day with us.
           </p>
           <SaveTheDateForm />
