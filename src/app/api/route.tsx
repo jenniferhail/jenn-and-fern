@@ -6,14 +6,11 @@ export async function PUT(request: Request) {
   client.setApiKey(process.env.SENDGRID_API_KEY || '')
 
   const reqData = await request.json()
-  const name = reqData.first_name
-  const email = reqData.email
-
   const reqBody = {
     method: 'PUT' as const,
     url: '/v3/marketing/contacts',
     body: {
-      contacts: [{ email, name }],
+      contacts: [{ ...reqData }],
     },
   }
 
