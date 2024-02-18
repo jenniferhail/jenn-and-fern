@@ -25,16 +25,14 @@ export default function Home() {
             as we celebrate <br />
             our <i>love story</i>.
           </h1>
-        </div>
-
-        <div className={s.bottom}>
           <Link href={`/save-the-date`} className="button">
             Save Our Date
           </Link>
-          <div className={cn(s.top, s.tiny)}>
-            <span>Ann</span>
-            <span>Arbor</span>
-          </div>
+        </div>
+
+        <div className={cn(s.bottom, s.tiny)}>
+          <span>Ann Arbor</span>
+          <span>Michigan</span>
         </div>
       </div>
     </Box>

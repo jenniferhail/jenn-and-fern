@@ -2,10 +2,7 @@
 @use '../../styles/mixins' as m;
 
 .tiny {
-  font-family: v.$sans;
-  font-size: 10.2px;
-  letter-spacing: 0.25em;
-  line-height: 1.7em;
+  @include m.type-tiny;
 }
 
 .top {
@@ -14,12 +11,12 @@
   position: relative;
   text-transform: uppercase;
   width: 100%;
+}
 
-  .center {
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-  }
+.center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .middle {
@@ -37,6 +34,10 @@
 }
 
 .bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  position: relative;
   width: 100%;
 
   p {
