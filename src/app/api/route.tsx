@@ -10,6 +10,7 @@ export async function PUT(request: Request) {
     method: 'PUT' as const,
     url: '/v3/marketing/contacts',
     body: {
+      list_ids: ['39d18bd6-a970-4d11-98bc-506a0fd3f2a5'],
       contacts: [{ ...reqData }],
     },
   }

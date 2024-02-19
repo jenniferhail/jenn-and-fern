@@ -71,9 +71,6 @@ const SaveTheDateForm = () => {
         <label htmlFor="whatsapp">
           WhatsApp: <input type="tel" name="whatsapp" />
         </label>
-        <label htmlFor="Language">
-          <input type="hidden" name="Language" value="en" />
-        </label>
 
         <button type="submit" className={s.btn}>
           Submit
