@@ -35,7 +35,6 @@ const SaveTheDateForm = () => {
   }
   return (
     <div>
-      {error && <p>{error}</p>}
       <form className={s.form} onSubmit={handleSubmit}>
         <label htmlFor="first_name">
           First name: <input type="text" name="first_name" />
@@ -76,6 +75,7 @@ const SaveTheDateForm = () => {
           Submit
         </button>
       </form>
+      {error && <p>{error}</p>}
     </div>
   )
 }
