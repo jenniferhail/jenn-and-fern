@@ -1,11 +1,13 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import '../../styles/globals.scss'
-import '../../styles/fonts.css'
+import '../../../styles/globals.scss'
+import '../../../styles/fonts.css'
 import s from './layout.module.scss'
-import Link from 'next/link'
-
 const inter = Inter({ subsets: ['latin'] })
+
+export async function generateStaticParams() {
+  return [{ lang: 'en-us' }, { lang: 'es-us' }]
+}
 
 export const metadata: Metadata = {
   title: 'Jenn & Fern',
@@ -14,11 +16,13 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
+  params = { lang: 'en-us' },
 }: Readonly<{
   children: React.ReactNode
+  params?: { lang: string }
 }>) {
   return (
-    <html lang="en">
+    <html lang={params.lang}>
       <body className={inter.className}>
         <main className={s.main}>
           {/* <div className={s.language}>
