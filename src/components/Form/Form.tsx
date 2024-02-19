@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import s from './Form.module.scss'
-import { useRouter } from 'next/navigation'
+import { useRouter } from '@/navigation'
 
 const SaveTheDateForm = () => {
   const router = useRouter()

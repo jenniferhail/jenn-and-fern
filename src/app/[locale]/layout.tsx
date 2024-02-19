@@ -1,3 +1,4 @@
+import { unstable_setRequestLocale } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import '../../../styles/globals.scss'
@@ -5,8 +6,10 @@ import '../../../styles/fonts.css'
 import s from './layout.module.scss'
 const inter = Inter({ subsets: ['latin'] })
 
-export async function generateStaticParams() {
-  return [{ lang: 'en-us' }, { lang: 'es-us' }]
+const locales = ['en', 'de']
+
+export function generateStaticParams() {
+  return locales.map((locale) => ({ locale }))
 }
 
 export const metadata: Metadata = {
@@ -16,13 +19,15 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-  params = { lang: 'en-us' },
+  params: { locale },
 }: Readonly<{
   children: React.ReactNode
-  params?: { lang: string }
+  params: { locale: string }
 }>) {
+  unstable_setRequestLocale(locale)
+
   return (
-    <html lang={params.lang}>
+    <html lang={locale}>
       <body className={inter.className}>
         <main className={s.main}>
           {/* <div className={s.language}>

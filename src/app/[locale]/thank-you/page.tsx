@@ -1,8 +1,17 @@
+import { unstable_setRequestLocale } from 'next-intl/server'
 import s from './page.module.scss'
 import Box from '@/components/Box/Box'
-import Link from 'next/link'
+import { Link } from '@/navigation'
 
-export default function ThankYou() {
+export default function ThankYou({
+  params: { locale },
+}: {
+  params: {
+    locale: string
+  }
+}) {
+  unstable_setRequestLocale(locale)
+
   return (
     <Box>
       <div className={s.inner}>

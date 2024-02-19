@@ -1,0 +1,10 @@
+{
+  "Home": {
+    "title": "Hola world!"
+  },
+  "ThankYou": {
+    "title": "Gracias",
+    "subtitle": "Please check your inbox for a welcome message!",
+    "cta": "Go Home"
+  }
+}

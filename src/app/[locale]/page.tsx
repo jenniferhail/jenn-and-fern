@@ -1,9 +1,20 @@
+import { useTranslations } from 'next-intl'
+import { unstable_setRequestLocale } from 'next-intl/server'
 import s from './page.module.scss'
 import cn from 'classnames'
 import Box from '@/components/Box/Box'
-import Link from 'next/link'
+import { Link } from '@/navigation'
 
-export default function Home() {
+export default function Home({
+  params: { locale },
+}: {
+  params: {
+    locale: string
+  }
+}) {
+  unstable_setRequestLocale(locale)
+  const t = useTranslations('Home')
+
   return (
     <Box>
       <div className={cn(s.step1)}>
