@@ -5,12 +5,19 @@ export async function PUT(request: Request) {
   const client = new Client()
   client.setApiKey(process.env.SENDGRID_API_KEY || '')
 
+  const { searchParams } = new URL(request.url)
+  const locale = searchParams.get('locale')
+  const listID =
+    locale === 'en'
+      ? process.env.SSENDGRID_LIST_ENGLISH
+      : process.env.SENDGRID_LIST_SPANISH
+
   const reqData = await request.json()
   const reqBody = {
     method: 'PUT' as const,
     url: '/v3/marketing/contacts',
     body: {
-      list_ids: ['39d18bd6-a970-4d11-98bc-506a0fd3f2a5'],
+      list_ids: [listID],
       contacts: [{ ...reqData }],
     },
   }
