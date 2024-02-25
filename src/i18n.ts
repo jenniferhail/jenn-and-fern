@@ -1,7 +1,6 @@
 import {notFound} from 'next/navigation';
 import { getRequestConfig } from "next-intl/server";
-
-const locales = ['en', 'es'];
+import { locales } from './navigation';
 
 // Create this configuration once per request and 
 // make it available to all Server Components.
