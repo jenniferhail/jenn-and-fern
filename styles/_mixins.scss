@@ -139,7 +139,8 @@
 @mixin button {
   display: inline-block;
   background-color: transparent;
-  border: 1px solid;
+  border: 1px solid rgb(var(--foreground-rgb));
+  color: rgb(var(--foreground-rgb));
   cursor: pointer;
   padding: 1.2rem 2rem 1rem;
   text-transform: uppercase;

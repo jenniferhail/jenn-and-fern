@@ -17,7 +17,9 @@
 .language {
   border-radius: 0;
   border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0);
   background-color: rgba(242, 240, 237, 0);
+  color: rgb(var(--foreground-rgb));
   font-family: v.$sans;
   font-size: 10.2px;
   letter-spacing: 0.25em;
@@ -30,6 +32,6 @@
   cursor: pointer;
 
   &.current {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid rgb(var(--foreground-rgb));
   }
 }
