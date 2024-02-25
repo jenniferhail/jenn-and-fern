@@ -4,7 +4,8 @@
 .language {
   position: absolute;
   top: 1rem;
-  left: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
   border-radius: 0;
   border: none;
   border-bottom: 1px solid;
@@ -21,4 +22,9 @@
   letter-spacing: 0.25em;
   line-height: 1.7em;
   cursor: pointer;
+
+  @include m.breakpoint(v.$md) {
+    left: 1rem;
+    transform: none;
+  }
 }
