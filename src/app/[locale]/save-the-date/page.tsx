@@ -42,6 +42,7 @@ export default function SaveTheDate({
           <p>{t('paragraph1')}</p>
           <p>{t('paragraph2')}</p>
           <p>{t('paragraph3')}</p>
+          <p>{t('paragraph4')}</p>
           <SaveTheDateForm labels={labels} locale={locale} />
         </div>
       </div>
