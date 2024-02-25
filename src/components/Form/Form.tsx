@@ -20,11 +20,17 @@ interface FormLabels {
     submit: string
     error: string
   }
+  locale: string
 }
 
-const SaveTheDateForm = ({ labels }: FormLabels) => {
+const SaveTheDateForm = ({ labels, locale }: FormLabels) => {
   const router = useRouter()
   const [error, setError] = useState<string>('')
+
+  const listID =
+    locale === 'en'
+      ? process.env.NEXT_PUBLIC_SENDGRID_LIST_ENGLISH
+      : process.env.NEXT_PUBLIC_SENDGRID_LIST_SPANISH
 
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
@@ -33,13 +39,19 @@ const SaveTheDateForm = ({ labels }: FormLabels) => {
     const formData = new FormData(formEl)
     const formValues = Object.fromEntries(formData.entries())
 
+    const body = {
+      list_ids: [listID],
+      contacts: [formValues],
+    }
+    // console.log('Form Data:', body)
+
     try {
       const response = await fetch('/api', {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formValues),
+        body: JSON.stringify(body),
       })
 
       if (response.ok) {
