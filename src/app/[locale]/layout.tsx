@@ -5,9 +5,8 @@ import '../../../styles/globals.scss'
 import '../../../styles/fonts.css'
 import s from './layout.module.scss'
 import LocaleButton from '@/components/LocaleButton/LocaleButton'
+import { locales } from '@/navigation'
 const inter = Inter({ subsets: ['latin'] })
-
-const locales = ['en', 'de']
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
