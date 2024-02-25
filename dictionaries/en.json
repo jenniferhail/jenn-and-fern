@@ -1,0 +1,36 @@
+{
+  "Home": {
+    "initials": "J + F",
+    "date": "Aug 10",
+    "year": "2024",
+    "city": "Ann Arbor",
+    "state": "Michigan",
+    "title": "Join us on a <br></br> <i>Saturday</i> in August, <br></br> in the middle of a <br></br> perennial <i>garden</i>, <br></br> as we celebrate <br></br> our <i>love story</i>.",
+    "cta": "Save The Date"
+  },
+  "SaveTheDate": {
+    "date": "August 10, 2024",
+    "location": "Ann Arbor, Michigan",
+    "paragraph1": "In place of traditionally mailed paper goods, we’re going digital and using this e-mail list for everything you need to know about our wedding. It’s 2024—let’s save some trees (and money)!",
+    "paragraph2": "You’ll receive updates when we post new information on our website, calendar invites to our ceremony and reception, and more. Written by Jenn & Fern, your bride and groom-to-be, get ready for some fun email to hit your inbox.",
+    "paragraph3": "To start, fill in your latest contact info below, so we can keep you in the loop and—after it’s all said and done—send you a thank you card for celebrating the best day with us.",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "email": "Your email",
+    "address_1": "Address Line 1",
+    "address_2": "Address Line 2",
+    "city": "City",
+    "state": "State",
+    "zip": "Zip Code",
+    "country": "Country",
+    "phone": "Phone Number",
+    "whatsapp": "WhatsApp",
+    "submit": "Submit",
+    "error": "Something went wrong. Please try again."
+  },
+  "ThankYou": {
+    "title": "Thank You",
+    "subtitle": "Please check your inbox for a welcome message!",
+    "cta": "Go Home"
+  }
+}

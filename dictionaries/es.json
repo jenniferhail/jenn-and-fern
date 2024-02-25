@@ -1,0 +1,36 @@
+{
+  "Home": {
+    "initials": "J + F",
+    "date": "Agosto 10",
+    "year": "2024",
+    "city": "Ann Arbor",
+    "state": "Michigan",
+    "title": "Acompáñanos a <i>celebrar</i> nuestra historia de <i>amor</i> en <i>una tarde</i> de Agosto en medio de un <i>jardín</i> de flores perennes.",
+    "cta": "Reserva la fecha"
+  },
+  "SaveTheDate": {
+    "date": "10 de Agosto de 2024",
+    "location": "Ann Arbor, Michigan",
+    "paragraph1": "Estamos en el 2024! En vez de métodos tradicionales, decidimos crear nuestro sitio web y así reducir comunicación a través de papel. Aquí te enterarás todo lo que necesitas saber sobre nuestra boda.",
+    "paragraph2": "A través de nuestra página, recibirás, avisos, invitaciones, noticias y más; creados por Jenn y Fern (Los novios). Alístate que lo bueno llegará a tu email.",
+    "paragraph3": "Comenzamos! Llena el formulario para que te mantengas al día, y así recibas tu RSVP; cuando hayas terminado recibirás una notificación agradeciéndote por ayudarnos a festejar el mejor día de nuestras vidas.",
+    "first_name": "Nombre",
+    "last_name": "Apellido",
+    "email": "Tu Email",
+    "address_1": "Dirección Línea 1",
+    "address_2": "Dirección Línea 2",
+    "city": "Ciudad",
+    "state": "Estado",
+    "zip": "Código Postal",
+    "country": "País",
+    "phone": "Número de Teléfono",
+    "whatsapp": "WhatsApp",
+    "submit": "Enviar",
+    "error": "Algo pasó. Por favor, revisa tu informacion."
+  },
+  "ThankYou": {
+    "title": "Gracias",
+    "subtitle": "¡Por favor, revisa tú correo electrónico por un mensaje de bienvenida!",
+    "cta": "Regresar a la Pagina Inicial"
+  }
+}

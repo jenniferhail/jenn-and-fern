@@ -27,8 +27,9 @@
 .btn {
   display: inline-block;
   background-color: transparent;
-  border: 1px solid;
+  border: 1px solid v.$black;
   cursor: pointer;
+  color: v.$black;
   padding: 1.2rem 2rem 1rem;
   text-transform: uppercase;
   font-family: v.$sans;

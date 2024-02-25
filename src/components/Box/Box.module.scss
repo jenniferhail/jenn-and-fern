@@ -31,7 +31,7 @@
       font-family: v.$script;
       font-size: 48px;
       font-style: normal;
-      line-height: inherit;
+      line-height: 0;
 
       @include m.breakpoint(v.$md) {
         font-size: 72px;
