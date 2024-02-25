@@ -1,9 +1,10 @@
-import { unstable_setRequestLocale } from 'next-intl/server'
-import type { Metadata } from 'next'
-import { Inter } from 'next/font/google'
+import 'normalize.css'
 import '../../../styles/globals.scss'
 import '../../../styles/fonts.css'
 import s from './layout.module.scss'
+import { unstable_setRequestLocale } from 'next-intl/server'
+import type { Metadata } from 'next'
+import { Inter } from 'next/font/google'
 import LocaleButton from '@/components/LocaleButton/LocaleButton'
 import { locales } from '@/navigation'
 const inter = Inter({ subsets: ['latin'] })
