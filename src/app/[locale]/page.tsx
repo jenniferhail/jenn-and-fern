@@ -26,15 +26,10 @@ export default function Home({
 
         <div className={s.middle}>
           <h1>
-            Join us on a
-            <br />
-            <i>Saturday</i> in August,
-            <br />
-            in the middle of a <br />
-            perennial <i>garden</i>,
-            <br />
-            as we celebrate <br />
-            our <i>love story</i>.
+            {t.rich('title', {
+              br: () => <br />,
+              i: (chunks) => <i>{chunks}</i>,
+            })}
           </h1>
           <Link href={`/save-the-date`} className="button">
             {t('cta')}

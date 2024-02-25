@@ -21,8 +21,12 @@
 
 .middle {
   margin: 0 auto;
-  max-width: 500px;
+  max-width: 290px;
   -webkit-font-smoothing: antialiased;
+
+  @include m.breakpoint(v.$md) {
+    max-width: 420px;
+  }
 
   h1 {
     margin: 2rem auto;
