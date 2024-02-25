@@ -89,7 +89,7 @@ const SaveTheDateForm = ({ labels }: FormLabels) => {
           {labels.whatsapp} <input type="tel" name="whatsapp" />
         </label>
 
-        <button type="submit" className={s.btn}>
+        <button type="submit" className="button">
           {labels.submit}
         </button>
       </form>
