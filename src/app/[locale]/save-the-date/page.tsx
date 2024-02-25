@@ -3,6 +3,7 @@ import s from './page.module.scss'
 import cn from 'classnames'
 import Box from '@/components/Box/Box'
 import SaveTheDateForm from '@/components/Form/Form'
+import { useTranslations } from 'next-intl'
 
 export default function SaveTheDate({
   params: { locale },
@@ -12,34 +13,36 @@ export default function SaveTheDate({
   }
 }) {
   unstable_setRequestLocale(locale)
+  const t = useTranslations('SaveTheDate')
+
+  const labels = {
+    first_name: t('first_name'),
+    last_name: t('last_name'),
+    email: t('email'),
+    address_1: t('address_1'),
+    address_2: t('address_2'),
+    city: t('city'),
+    state: t('state'),
+    zip: t('zip'),
+    country: t('country'),
+    phone: t('phone'),
+    whatsapp: t('whatsapp'),
+    submit: t('submit'),
+    error: t('error'),
+  }
 
   return (
     <Box>
       <div className={cn(s.step1)}>
         <div className={s.middle}>
           <h1>
-            <i>August 10, 2024</i>
+            <i>{t('date')}</i>
           </h1>
-          <h2 className={s.tiny}>Ann Arbor, Michigan</h2>
-          <p>
-            In place of traditionally mailed paper goods, we&apos;re going
-            digital and using this e-mail list for everything you need to know
-            about our wedding. It&apos;s 2024—let&apos;s save some trees (and
-            money)!
-          </p>
-          <p>
-            You&apos;ll receive updates when we post new information on our
-            website, calendar invites to our ceremony and reception, and more.
-            Written by Jenn &amp; Fern, your bride and groom-to-be, get ready
-            for some fun email to hit your inbox.
-          </p>
-
-          <p>
-            To start, fill in your latest contact info below, so we can keep you
-            in the loop and—after it&apos;s all said and done—send you a thank
-            you card for celebrating the best day with us.
-          </p>
-          <SaveTheDateForm />
+          <h2 className={s.tiny}>{t('location')}</h2>
+          <p>{t('paragraph1')}</p>
+          <p>{t('paragraph2')}</p>
+          <p>{t('paragraph3')}</p>
+          <SaveTheDateForm labels={labels} />
         </div>
       </div>
     </Box>

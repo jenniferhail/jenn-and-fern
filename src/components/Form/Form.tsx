@@ -4,7 +4,25 @@ import { useState } from 'react'
 import s from './Form.module.scss'
 import { useRouter } from '@/navigation'
 
-const SaveTheDateForm = () => {
+interface FormLabels {
+  labels: {
+    first_name: string
+    last_name: string
+    email: string
+    address_1: string
+    address_2: string
+    city: string
+    state: string
+    zip: string
+    country: string
+    phone: string
+    whatsapp: string
+    submit: string
+    error: string
+  }
+}
+
+const SaveTheDateForm = ({ labels }: FormLabels) => {
   const router = useRouter()
   const [error, setError] = useState<string>('')
 
@@ -27,52 +45,52 @@ const SaveTheDateForm = () => {
       if (response.ok) {
         router.push('/thank-you')
       } else {
-        setError('Something went wrong. Please try again.')
+        setError(labels.error)
       }
     } catch (error) {
-      setError('Something went wrong. Please try again.')
+      setError(labels.error)
     }
   }
   return (
     <div>
       <form className={s.form} onSubmit={handleSubmit}>
         <label htmlFor="first_name">
-          First name: <input type="text" name="first_name" />
+          {labels.first_name} <input type="text" name="first_name" />
         </label>
         <label htmlFor="last_name">
-          Last name: <input type="text" name="last_name" />
+          {labels.last_name} <input type="text" name="last_name" />
         </label>
         <label htmlFor="email">
-          Your email: <input type="email" name="email" />
+          {labels.email} <input type="email" name="email" />
         </label>
         <label htmlFor="address1">
-          Address Line 1: <input type="text" name="address_line_1" />
+          {labels.address_1} <input type="text" name="address_line_1" />
         </label>
         <label htmlFor="address2">
-          Address Line 2: <input type="text" name="address_line_2" />
+          {labels.address_2} <input type="text" name="address_line_2" />
         </label>
         <label htmlFor="city">
-          City: <input type="text" name="city" />
+          {labels.city} <input type="text" name="city" />
         </label>
         <label htmlFor="state">
-          State/Province/Region:{' '}
+          {labels.state}
           <input type="text" name="state_province_region" />
         </label>
         <label htmlFor="postalCode">
-          Postal Code: <input type="text" name="postal_code" />
+          {labels.zip} <input type="text" name="postal_code" />
         </label>
         <label htmlFor="country">
-          Country: <input type="text" name="country" />
+          {labels.country} <input type="text" name="country" />
         </label>
         <label htmlFor="phone">
-          Phone Number: <input type="tel" name="phone_number" />
+          {labels.phone} <input type="tel" name="phone_number" />
         </label>
         <label htmlFor="whatsapp">
-          WhatsApp: <input type="tel" name="whatsapp" />
+          {labels.whatsapp} <input type="tel" name="whatsapp" />
         </label>
 
         <button type="submit" className={s.btn}>
-          Submit
+          {labels.submit}
         </button>
       </form>
       {error && <p>{error}</p>}

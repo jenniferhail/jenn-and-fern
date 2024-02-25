@@ -2,6 +2,7 @@ import { unstable_setRequestLocale } from 'next-intl/server'
 import s from './page.module.scss'
 import Box from '@/components/Box/Box'
 import { Link } from '@/navigation'
+import { useTranslations } from 'next-intl'
 
 export default function ThankYou({
   params: { locale },
@@ -11,16 +12,17 @@ export default function ThankYou({
   }
 }) {
   unstable_setRequestLocale(locale)
+  const t = useTranslations('ThankYou')
 
   return (
     <Box>
       <div className={s.inner}>
         <h1>
-          <i>Thank You</i>
+          <i>{t('title')}</i>
         </h1>
-        <p>Please check your inbox for a welcome message!</p>
+        <p>{t('subtitle')}</p>
         <Link className="button" href={`/`}>
-          Go Home
+          {t('cta')}
         </Link>
       </div>
     </Box>

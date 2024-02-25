@@ -19,9 +19,9 @@ export default function Home({
     <Box>
       <div className={cn(s.step1)}>
         <div className={cn(s.top, s.tiny)}>
-          <span>Aug 10</span>
-          <span className={s.center}>J + F</span>
-          <span>2024</span>
+          <span>{t('date')}</span>
+          <span className={s.center}>{t('initials')}</span>
+          <span>{t('year')}</span>
         </div>
 
         <div className={s.middle}>
@@ -37,13 +37,13 @@ export default function Home({
             our <i>love story</i>.
           </h1>
           <Link href={`/save-the-date`} className="button">
-            Save Our Date
+            {t('cta')}
           </Link>
         </div>
 
         <div className={cn(s.bottom, s.tiny)}>
-          <span>Ann Arbor</span>
-          <span>Michigan</span>
+          <span>{t('city')}</span>
+          <span>{t('state')}</span>
         </div>
       </div>
     </Box>

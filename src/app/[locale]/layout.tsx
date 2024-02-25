@@ -4,6 +4,7 @@ import { Inter } from 'next/font/google'
 import '../../../styles/globals.scss'
 import '../../../styles/fonts.css'
 import s from './layout.module.scss'
+import LocaleButton from '@/components/LocaleButton/LocaleButton'
 const inter = Inter({ subsets: ['latin'] })
 
 const locales = ['en', 'de']
@@ -30,9 +31,9 @@ export default function RootLayout({
     <html lang={locale}>
       <body className={inter.className}>
         <main className={s.main}>
-          {/* <div className={s.language}>
-            <Link href="/">EN</Link> • <Link href="/es">ES</Link>
-          </div> */}
+          <div className={s.language}>
+            <LocaleButton locale={locale} />
+          </div>
           {children}
         </main>
       </body>
