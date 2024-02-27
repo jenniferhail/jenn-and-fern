@@ -27,7 +27,7 @@
     "phone": "Número de Teléfono",
     "whatsapp": "WhatsApp",
     "submit": "Enviar",
-    "error": "Algo pasó. Por favor, revisa tu informacion."
+    "error": "¡¿Qué pasó?! Por favor, revisa tu informacion y asegurate que tienes el email correcto y evita usar autofill."
   },
   "ThankYou": {
     "title": "Gracias",
