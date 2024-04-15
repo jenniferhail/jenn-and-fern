@@ -22,9 +22,9 @@ export default function Home({
         <p>
           Ann Arbor is a beautiful college town only 40 minutes west of Detroit.
           Jen says the tree-lined neighborhoods feel a lot like Louisville, KY.
-          We've lived here for three years and have a list of our favorite spots
-          (see our Things To Do page for more), but there are still so many on
-          our wish list.
+          We&apos;ve lived here for three years and have a list of our favorite
+          spots (see our Things To Do page for more), but there are still so
+          many on our wish list.
         </p>
         <p>
           The summers here are absolutely perfect — especially after waiting all
@@ -37,14 +37,15 @@ export default function Home({
         <p>
           The simplest way for many of you will be to fly into DTW and Uber/Lyft
           to AA or rent a car for full control over your journey. Please let us
-          know if you'd like to find a group for splitting car or Airbnb
+          know if you&apos;d like to find a group for splitting car or Airbnb
           rentals.
         </p>
         <p>
-          If you're the adventurous type, you can fly into Chicago and take the
-          Amtrak from Union Station to Ann Arbor. We took the trip for the first
-          time in March and it's really lovely, only around 4 hours and no TSA
-          required. Plan to arrive on Friday if you want to go this route.
+          If you&apos;re the adventurous type, you can fly into Chicago and take
+          the Amtrak from Union Station to Ann Arbor. We took the trip for the
+          first time in March and it&apos;s really lovely, only around 4 hours
+          and no TSA required. Plan to arrive on Friday if you want to go this
+          route.
         </p>
         <h2>Lodging</h2>
         <p>

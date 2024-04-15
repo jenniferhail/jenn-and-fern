@@ -35,8 +35,8 @@ export default function Home({
           Infused with natural charm, the perennial garden at the Matthaei
           Botanical Gardens remains a favorite setting for treasured moments.
           Its tranquil beauty adds an enchanting touch to special occasions.
-          We’re excited to say &quot;I do&quot; in a location we can visit and
-          enjoy year after year.
+          We&apos;re excited to say &quot;I do&quot; in a location we can visit
+          and enjoy year after year.
         </p>
         <p className={s.important}>
           <b>Venue:</b>
