@@ -3,15 +3,11 @@
 
 .buttons {
   position: absolute;
-  top: 1rem;
+  top: 12px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-
-  @include m.breakpoint(v.$md) {
-    left: 1rem;
-    transform: none;
-  }
+  z-index: 1;
 }
 
 .language {

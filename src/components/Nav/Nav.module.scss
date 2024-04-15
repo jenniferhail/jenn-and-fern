@@ -1,0 +1,41 @@
+@use '../styles/variables' as v;
+@use '../styles/mixins' as m;
+
+.header {
+  @include m.type-tiny;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 32px 0 16px;
+
+  li {
+    list-style: none;
+    padding: 8px 32px;
+    opacity: 0.3;
+
+    &:has(a) {
+      opacity: 1;
+      padding: 0;
+    }
+  }
+
+  a {
+    display: block;
+    padding: 8px 32px;
+  }
+}
+
+.logo {
+  font-family: v.$script;
+  font-size: 60px;
+  line-height: 1;
+}
+
+.rsvp {
+  margin-left: 32px;
+
+  a {
+    @include m.button;
+  }
+}

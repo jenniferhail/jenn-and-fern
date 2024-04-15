@@ -1,8 +1,9 @@
-@use 'variables' as v;
-@use 'mixins' as m;
+@use 'styles/variables' as v;
+@use 'styles/mixins' as m;
 
 .tiny {
   @include m.type-tiny;
+  margin-bottom: 3rem;
 }
 
 .top {
@@ -11,45 +12,42 @@
   position: relative;
   text-transform: uppercase;
   width: 100%;
-}
 
-.center {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  .center {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 .middle {
   margin: 0 auto;
-  max-width: 290px;
+  max-width: 500px;
   -webkit-font-smoothing: antialiased;
 
-  @include m.breakpoint(v.$md) {
-    max-width: 420px;
-  }
-
   h1 {
-    margin: 2rem auto;
+    margin: 2rem auto 1rem;
 
     @include m.breakpoint(v.$md) {
-      margin: 4rem auto;
+      margin: 2rem auto 1.5rem;
     }
+  }
+
+  p {
+    line-height: 1.5;
+    margin-bottom: 1rem;
   }
 }
 
 .bottom {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 2rem;
-  position: relative;
   width: 100%;
 
   p {
     font-size: 1rem;
+    line-height: 1.4;
     margin: 0 auto 2rem;
     max-width: 550px;
     text-wrap: balance;
-    line-height: 1.4;
   }
 }
 

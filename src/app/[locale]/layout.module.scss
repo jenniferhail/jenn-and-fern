@@ -1,15 +1,56 @@
 @use 'variables' as v;
 @use 'mixins' as m;
 
-.main {
+.body {
+  background-color: var(--box-bg);
+}
+
+.footer {
+  padding-bottom: 3vw;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: 34vw;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  align-items: center;
-  padding: 5rem 1rem 1rem;
-  min-height: 100vh;
+  justify-content: flex-end;
 
-  @include m.breakpoint(v.$md) {
-    padding: 6rem;
+  span {
+    font-family: v.$script;
+    font-size: 32vw;
+    line-height: 0.5;
+    position: relative;
+    left: -5%;
+    white-space: nowrap;
+  }
+}
+
+.credit {
+  @include m.type-tiny;
+  font-size: 10px;
+  text-align: center;
+  padding: 1rem 2rem 0;
+  position: relative;
+  z-index: 2;
+
+  p {
+    margin: 0;
+  }
+
+  a {
+    padding: 4px 10px;
+    border-radius: 16px;
+    white-space: nowrap;
+  }
+
+  .bride {
+    background-color: rgb(198 239 153 / 70%);
+  }
+  .groom {
+    background-color: rgb(153 239 218 / 70%);
+  }
+  .cat {
+    background-color: rgb(204 153 239 / 60%);
   }
 }

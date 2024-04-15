@@ -1,0 +1,26 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.section {
+  margin-bottom: 2rem;
+  max-width: 600px;
+  width: 100%;
+
+  h2 {
+    font-family: v.$main;
+    letter-spacing: 2.5px;
+    margin: 4rem 0 1rem;
+    font-weight: 200;
+    text-transform: uppercase;
+  }
+}
+
+.important {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  b {
+    flex: 0 0 120px;
+  }
+}
