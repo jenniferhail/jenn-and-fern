@@ -6,7 +6,11 @@
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  padding: 60px 30px 30px;
+  padding: 60px 1rem 30px;
+
+  @include m.breakpoint(v.$md) {
+    padding: 60px 30px 30px;
+  }
 }
 
 .hero {
@@ -24,6 +28,7 @@
   aspect-ratio: 16/9;
   width: 100%;
   text-align: center;
+  height: calc(100vh - 60px * 2);
 
   h1,
   span {
@@ -37,7 +42,7 @@
 
 .section {
   margin-top: -5vw;
-  margin-bottom: 14rem;
+  margin-bottom: 8rem;
   text-align: center;
   width: 100%;
   position: relative;
@@ -67,18 +72,26 @@
 }
 
 .cards {
-  align-items: flex-start;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
   gap: 6rem;
   width: 100%;
   margin: 12rem auto;
+
+  @include m.breakpoint(860px) {
+    align-items: flex-start;
+    flex-direction: row;
+    gap: 6rem;
+  }
 
   .card {
     flex: 0 1 50%;
     border: 1px solid rgb(var(--foreground-rgb));
     border-radius: 16px;
     max-width: 330px;
+    width: 100%;
     background: transparent;
     transition: all 200ms ease-in-out;
     position: relative;

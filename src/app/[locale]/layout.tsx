@@ -5,7 +5,7 @@ import s from './layout.module.scss'
 import { unstable_setRequestLocale } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-// import LocaleButton from '@/components/LocaleButton/LocaleButton'
+import LocaleButton from '@/components/LocaleButton/LocaleButton'
 import { Link, locales } from '@/navigation'
 import Nav from '@/components/Nav/Nav'
 import cn from 'classnames'
@@ -62,8 +62,10 @@ export default function SaveTheDateLayout({
               >
                 their cat Theo
               </Link>
-              .
             </p>
+          </div>
+          <div className={s.language}>
+            <LocaleButton locale={locale} />
           </div>
         </footer>
       </body>

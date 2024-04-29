@@ -12,11 +12,11 @@ function LocaleButton({ locale }: { locale: string }) {
 
   return (
     <div className={s.buttons}>
-      {locales.map((item, key) => {
+      {locales?.map((item, key) => {
         return (
           <button
             className={cn(s.language, {
-              [s.current]: item == locale,
+              [s.current]: item === locale,
             })}
             onClick={
               item !== locale

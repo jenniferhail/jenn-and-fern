@@ -30,16 +30,9 @@ export default function RootLayout({
   unstable_setRequestLocale(locale)
 
   return (
-    <html lang={locale}>
-      <body className={cn(s.body, inter.className)}>
-        <NavVertical />
-        <main className={s.main}>
-          <div className={s.language}>
-            <LocaleButton locale={locale} />
-          </div>
-          {children}
-        </main>
-      </body>
-    </html>
+    <div className={s.wrapper}>
+      <NavVertical />
+      <main className={s.main}>{children}</main>
+    </div>
   )
 }

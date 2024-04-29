@@ -10,7 +10,7 @@
   position: relative;
   text-align: center;
   width: 100%;
-  height: 34vw;
+  height: calc(34vw + 106px + 40px);
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -36,12 +36,21 @@
 
   p {
     margin: 0;
+    line-height: 2;
+    text-wrap: balance;
   }
 
   a {
-    padding: 4px 10px;
+    border: 1px solid transparent;
+    padding: 6px 10px 4px;
     border-radius: 16px;
     white-space: nowrap;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid;
+    }
   }
 
   .bride {

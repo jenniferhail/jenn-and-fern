@@ -20,7 +20,12 @@ export default function Home({
         <h1 className="h1">
           <i>Registry</i>
         </h1>
-        <p>We need to write this page</p>
+        <p>
+          We are so excited to celebrate our special day with all of you and are
+          truly grateful for any contributions towards our future. If you wish
+          to give a gift, we would be thrilled to receive something from our
+          registry below. Thank you so much!
+        </p>
         <a
           className="zola-registry-embed"
           href="www.zola.com/registry/hailvillavicenciowedding"

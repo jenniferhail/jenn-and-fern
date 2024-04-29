@@ -2,6 +2,7 @@ import s from './page.module.scss'
 import { useTranslations } from 'next-intl'
 import { unstable_setRequestLocale } from 'next-intl/server'
 import { Link } from '@/navigation'
+import cn from 'classnames'
 
 export default function Home({
   params: { locale },
@@ -21,10 +22,8 @@ export default function Home({
         </h1>
         <p>
           Ann Arbor is a beautiful college town only 40 minutes west of Detroit.
-          Jen says the tree-lined neighborhoods feel a lot like Louisville, KY.
-          We&apos;ve lived here for three years and have a list of our favorite
-          spots (see our Things To Do page for more), but there are still so
-          many on our wish list.
+          Jen says the tree-lined neighborhoods feel a lot like Louisville, KY —
+          where she lived before moving to Michigan.
         </p>
         <p>
           The summers here are absolutely perfect — especially after waiting all
@@ -37,21 +36,21 @@ export default function Home({
         <p>
           The simplest way for many of you will be to fly into DTW and Uber/Lyft
           to AA or rent a car for full control over your journey. Please let us
-          know if you&apos;d like to find a group for splitting car or Airbnb
-          rentals.
+          know if you&apos;d like help making a group for splitting car or
+          Airbnb rentals.
         </p>
         <p>
           If you&apos;re the adventurous type, you can fly into Chicago and take
           the Amtrak from Union Station to Ann Arbor. We took the trip for the
-          first time in March and it&apos;s really lovely, only around 4 hours
-          and no TSA required. Plan to arrive on Friday if you want to go this
+          first time in March and it was really lovely, only around 4 hours and
+          no TSA required. Plan to arrive on Friday if you want to go this
           route.
         </p>
         <h2>Lodging</h2>
         <p>
           We recommend staying within a 10-15 minute drive of our ceremony and
-          reception venues. Here are a few options, or you can search for a
-          place to stay on Airbnb.
+          reception venues, on the east side of the city. Here are a few
+          options, or you can search for a place to stay via Airbnb.
         </p>
         <p>
           Hyatt Place Ann Arbor
@@ -68,6 +67,14 @@ export default function Home({
           <br />
           <a href="https://maps.app.goo.gl/5b4zw1sRtBcW7B3RA">View on map</a>
         </p>
+        <h2>After You Arrive</h2>
+        <p>
+          Check out our <Link href="/things-to-do">Things To Do page</Link> for
+          suggestions for sight-seeing, places to eat and more.
+        </p>
+        <Link className={cn(s.rsvp, 'button')} href="/things-to-do">
+          Find things to do
+        </Link>
       </section>
     </>
   )
