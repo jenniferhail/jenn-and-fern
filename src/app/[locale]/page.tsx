@@ -22,25 +22,28 @@ export default function Home({
       <main className={s.main}>
         <div className={s.hero}>
           <h1 className="h1">
-            <i>August 10, 2024</i>
+            <i>{t('date_full')}</i>
           </h1>
-          <span>Ann Arbor, Michigan</span>
+          <span>
+            {t('city')}, {t('state')}
+          </span>
         </div>
         <section className={s.section}>
-          <h2 className={s.large}>Join us in celebration</h2>
+          <h2 className={s.large}>{t('large_text')}</h2>
           <h2>
-            For the wedding of <br />
-            Jennifer Hail & <br />
-            Fernando Villavicencio
+            {t.rich('wedding', {
+              br: () => <br />,
+              i: (chunks) => <i>{chunks}</i>,
+            })}
           </h2>
           <div className={s.cards}>
             <div className={cn(s.card, s.wedding)}>
               <Link href="/schedule">
-                <h2>Ceremony</h2>
-                5:30 p.m.
+                <h2>{t('ceremony_title')}</h2>
+                {t('ceremony_time')}
                 <br />
-                <span>Matthaei Botanical Gardens</span>
-                <span className={s.details}>See details</span>
+                <span>{t('ceremony_location')}</span>
+                <span className={s.details}>{t('details')}</span>
               </Link>
               <div className={s.img}>
                 <Image
@@ -53,11 +56,11 @@ export default function Home({
             </div>
             <div className={cn(s.card, s.ecuador)}>
               <Link href="/schedule">
-                <h2>Reception</h2>
-                6:30 p.m.
+                <h2>{t('reception_title')}</h2>
+                {t('reception_time')}
                 <br />
-                <span>StudioStudio</span>
-                <span className={s.details}>See details</span>
+                <span>{t('reception_location')}</span>
+                <span className={s.details}>{t('details')}</span>
               </Link>
               <div className={s.img}>
                 <Image
@@ -74,7 +77,7 @@ export default function Home({
             href="http://rsvp.jennandfern.com/"
             target="_blank"
           >
-            RSVP by July 1st
+            {t('rsvp')}
           </Link>
         </section>
       </main>
