@@ -11,53 +11,52 @@ export default function Home({
   }
 }) {
   unstable_setRequestLocale(locale)
-  const t = useTranslations('Home')
+  const t = useTranslations('Things To Do')
 
   return (
     <>
       <section className={s.section}>
         <h1 className="h1">
-          <i>Things To Do</i>
+          <i>{t('title')}</i>
         </h1>
-        <p>
-          We&apos;ve lived in Ann Arbor for three years and have made a list of
-          our favorite spots, but there are still so many on our wish list.
-        </p>
-        <p>
-          Check out{' '}
-          <Link href="https://www.annarbor.org/things-to-do/" target="_blank">
-            this resource
-          </Link>
-          , or see our recommendations below.
-        </p>
+        <div dangerouslySetInnerHTML={{ __html: t.raw('intro') }} />
       </section>
       <section className={s.section}>
-        <h2>Food & Drink</h2>
+        <h2>{t('coffee')}</h2>
         <ul>
-          <li>Stray Hen</li>
-          <li>Tomukun</li>
-          <li>Takoi</li>
-          <li>Lowertown Bar & Cafe</li>
-          <li>York Food & Drink</li>
-          <li>Zamaan Cafe</li>
           <li>Dozer Coffee</li>
           <li>Comet Coffee</li>
-          <li>Jerusalem Garden</li>
           <li>Argus Farm Stop</li>
+          <li>Lowertown Bar & Cafe</li>
+          <li>The Drip House</li>
+        </ul>
+        <h2>{t('brunch')}</h2>
+        <ul>
+          <li>Stray Hen</li>
+          <li>Zingerman&apos;s Deli</li>
+          <li>Kerrytown Market</li>
+        </ul>
+        <h2>{t('food')}</h2>
+        <ul>
+          <li>Tomukun</li>
+          <li>York Food & Drink</li>
+          <li>Zamaan Cafe</li>
+          <li>Jerusalem Garden</li>
           <li>Mani Osteria & Bar</li>
           <li>Aventura</li>
-          <li>The Drip House</li>
-          <li>Nightcap</li>
-          <li>Kerrytown Market</li>
-          <li>Zingerman&apos;s Deli</li>
           <li>Zingerman&apos;s Roadhouse</li>
-          <li>The Last Word</li>
-          <li>Bill&apos;s Beer Garden</li>
           <li>Fleetwood Diner</li>
           <li>Blank Slate Creamery</li>
-          <li>Blom Mead + Cider</li>
         </ul>
-        <h2>In Ann Arbor</h2>
+        <h2>{t('drinks')}</h2>
+        <ul>
+          <li>Nightcap</li>
+          <li>The Last Word</li>
+          <li>Blom Mead + Cider</li>
+          <li>Lowertown Bar & Cafe</li>
+          <li>Bill&apos;s Beer Garden</li>
+        </ul>
+        <h2>{t('in')}</h2>
         <ul>
           <li>Downtown</li>
           <li>Tubing on the lake</li>
@@ -68,13 +67,14 @@ export default function Home({
           <li>Kerry Town</li>
           <li>Local Theater</li>
         </ul>
-        <h2>Outside Ann Arbor</h2>
+        <h2>{t('out')}</h2>
         <ul>
           <li>Detroit</li>
           <li>Belle Isle</li>
           <li>LegoLand</li>
           <li>Canada</li>
           <li>Outlet Mall</li>
+          <li>Takoi</li>
         </ul>
       </section>
     </>

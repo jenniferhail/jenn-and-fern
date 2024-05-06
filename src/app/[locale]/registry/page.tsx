@@ -12,26 +12,21 @@ export default function Home({
   }
 }) {
   unstable_setRequestLocale(locale)
-  const t = useTranslations('Home')
+  const t = useTranslations('Registry')
 
   return (
     <>
       <section className={s.section}>
         <h1 className="h1">
-          <i>Registry</i>
+          <i>{t('title')}</i>
         </h1>
-        <p>
-          We are so excited to celebrate our special day with all of you and are
-          truly grateful for any contributions towards our future. If you wish
-          to give a gift, we would be thrilled to receive something from our
-          registry below. Thank you so much!
-        </p>
+        <p>{t('content')}</p>
         <a
           className="zola-registry-embed"
           href="www.zola.com/registry/hailvillavicenciowedding"
           data-registry-key="hailvillavicenciowedding"
         >
-          Our Zola Wedding Registry
+          {t('embed_title')}
         </a>
         <Script src="/registry.js" />
       </section>
