@@ -75,51 +75,65 @@
   },
   "Travel": {
     "title": "Translate Travel",
-    "intro": "",
-    "heading1": "",
-    "content1": "",
-    "heading2": "",
-    "content2": "",
-    "heading3": "",
-    "content3": "",
-    "button3": "",
-    "button3link": ""
+    "intro": "To do",
+    "heading1": "To do",
+    "content1": "To do",
+    "heading2": "To do",
+    "content2": "To do",
+    "heading3": "To do",
+    "content3": "To do",
+    "button3": "To do",
+    "button3link": "To do"
   },
   "Schedule": {
-    "title": "Translate Schedule",
-    "intro": "",
-    "heading1": "",
-    "content1": "",
+    "title": "Schedule",
+    "intro": "<p>We are overjoyed to have you join us on this beautiful journey as we become partners for life. It means the world to us to share in the warmth of your company on our special day. We have chosen a garden venue for our ceremony and a creative studio space for our reception, which we plan to transform with an abundance of fresh flowers.</p><p>To help you navigate our day with ease, please see the schedule below.</p>",
+    "heading1": "Welcome Party",
+    "content1": "<p>We know most of you are traveling to Michigan for the wedding, so we want to welcome everyone and kick off a fun weekend with a little welcome party! You can expect a casual, summer house party with home-made food (likely Ecuadorian style, aka made by Fernando), cold drinks and music in our backyard.</p>",
     "location1": {
-      "title": "Venue:",
-      "content": "Kimberly Maged Perennial Garden<br></br>Matthaei Botanical Gardens<br></br>1800 N Dixboro Road<br></br>Ann Arbor, MI 48105"
+      "title": "Location:",
+      "content": "TBD!"
     },
     "time1": {
-      "title": "Start Time:",
-      "content": ""
+      "title": "Time:",
+      "content": "Friday, August 9 from 6pm to 8pm"
     },
     "directions1": {
       "title": "Get Directions",
       "link": "https://www.google.com/maps/dir//Matthaei+Botanical+Gardens,+1800+N+Dixboro+Rd,+Ann+Arbor,+MI+48105/@42.3081156,-83.6923869,12.88z/data=!4m9!4m8!1m0!1m5!1m1!1s0x883cabe478937947:0x98f029f1869e4017!2m2!1d-83.6632035!2d42.3022338!3e0?entry=ttu"
     },
-    "heading2": "",
-    "content2": "",
+    "heading2": "Ceremony",
+    "content2": "<p>Infused with natural charm, the perennial garden at the Matthaei Botanical Gardens remains a favorite setting for treasured moments. Its tranquil beauty adds an enchanting touch to special occasions. We're excited to say \"I do\" in a location we can visit and enjoy year after year.</p>",
     "location2": {
-      "title": "Venue:",
+      "title": "Location:",
       "content": "Kimberly Maged Perennial Garden<br></br>Matthaei Botanical Gardens<br></br>1800 N Dixboro Road<br></br>Ann Arbor, MI 48105"
     },
     "time2": {
-      "title": "Start Time:",
-      "content": ""
+      "title": "Time:",
+      "content": "Saturday, August 10 at 4:30pm<br></br>Guests can experience the grounds and spend time in the gardens before our ceremony begins at 5:30pm."
     },
     "directions2": {
       "title": "Get Directions",
       "link": "https://www.google.com/maps/dir//Matthaei+Botanical+Gardens,+1800+N+Dixboro+Rd,+Ann+Arbor,+MI+48105/@42.3081156,-83.6923869,12.88z/data=!4m9!4m8!1m0!1m5!1m1!1s0x883cabe478937947:0x98f029f1869e4017!2m2!1d-83.6632035!2d42.3022338!3e0?entry=ttu"
     },
-    "heading3": "",
-    "content3": "",
-    "button3": "",
-    "button3link": ""
+    "heading3": "Reception",
+    "content3": "The party continues at StudioStudio with an evening filled with heartfelt toasts, dinner from one of our favorite restaurants in Michigan and, of course, a good time on the dance floor. Nestled beside York Restaurant—an Ann Arbor favorite that sells everything one could need for fancy charcuterie—StudioStudio is an open and airy blank canvas for creative minds to use however they can imagine.",
+    "location3": {
+      "title": "Location:",
+      "content": "StudioStudio<br></br>1946 Packard Street<br></br>Ann Arbor, MI 48104"
+    },
+    "time3": {
+      "title": "Time:",
+      "content": "Saturday, August 10 from 6:30pm to 11:30pm"
+    },
+    "directions3": {
+      "title": "Get Directions",
+      "link": "https://www.google.com/maps/dir//StudioStudio,+1946+Packard+St,+Ann+Arbor,+MI+48104/@42.257521,-83.7305617,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x883caff281f80b77:0x678eeb6a629a1558!2m2!1d-83.7279868!2d42.2575171!3e0?entry=ttu"
+    },
+    "heading4": "Let us know if you can make it",
+    "content4": "",
+    "button4": "RSVP by July 1st",
+    "button4link": "http://rsvp.jennandfern.com/"
   },
   "FAQs": {
     "title": "Translate Your Questions, Answered",
