@@ -1,5 +1,23 @@
 {
-  "Global": {},
+  "Global": {
+    "menu": "Menu",
+    "home": "Home",
+    "schedule": "Schedule",
+    "travel": "Travel",
+    "things": "Things to do",
+    "our_story": "Our story",
+    "faqs": "FAQs",
+    "registry": "Registry",
+    "save_the_date": "Save the Date",
+    "rsvp": "RSVP by July 1st",
+    "by": "by",
+    "made": "Website made by",
+    "bride": "the bride",
+    "translated": ", Translated by",
+    "groom": "the groom",
+    "supervised": "& supervised by",
+    "cat": "their cat Theo"
+  },
   "Home": {
     "initials": "J + F",
     "date": "Aug 10",
@@ -92,7 +110,7 @@
     },
     "time2": {
       "title": "Time:",
-      "content": "Saturday, August 10 at 5:30pm, but please arrive by 4:30pm to experience the grounds and spend time in the gardens."
+      "content": "Saturday, August 10 at 4:30pm<br></br>Guests can experience the grounds and spend time in the gardens before our ceremony begins at 5:30pm."
     },
     "directions2": {
       "title": "Get Directions",

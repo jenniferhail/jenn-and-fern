@@ -1,5 +1,23 @@
 {
-  "Global": {},
+  "Global": {
+    "menu": "Menu",
+    "home": "Home",
+    "schedule": "Schedule",
+    "travel": "Travel",
+    "things": "Things to do",
+    "our_story": "Our story",
+    "faqs": "FAQs",
+    "registry": "Registry",
+    "save_the_date": "Save the Date",
+    "rsvp": "RSVP by July 1st",
+    "by": "by",
+    "made": "Website made by",
+    "bride": "the bride",
+    "translated": ", Translated by",
+    "groom": "the groom",
+    "supervised": "& supervised by",
+    "cat": "their cat Theo"
+  },
   "Home": {
     "initials": "J + F",
     "date": "Agosto 10",
