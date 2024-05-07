@@ -5,10 +5,7 @@ import s from './layout.module.scss'
 import { unstable_setRequestLocale } from 'next-intl/server'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import LocaleButton from '@/components/LocaleButton/LocaleButton'
 import { locales } from '@/navigation'
-import NavVertical from '@/components/NavVertical/NavVertical'
-import cn from 'classnames'
 const inter = Inter({ subsets: ['latin'] })
 
 export function generateStaticParams() {
@@ -31,7 +28,6 @@ export default function RootLayout({
 
   return (
     <div className={s.wrapper}>
-      <NavVertical />
       <main className={s.main}>{children}</main>
     </div>
   )

@@ -4,10 +4,7 @@ import '../../../../styles/fonts.css'
 import s from './layout.module.scss'
 import { unstable_setRequestLocale } from 'next-intl/server'
 import type { Metadata } from 'next'
-// import LocaleButton from '@/components/LocaleButton/LocaleButton'
 import { locales } from '@/navigation'
-import Nav from '@/components/Nav/Nav'
-import NavVertical from '@/components/NavVertical/NavVertical'
 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }))
@@ -29,7 +26,6 @@ export default function ScheduleLayout({
 
   return (
     <>
-      <NavVertical />
       <main className={s.main}>{children}</main>
     </>
   )

@@ -47,24 +47,24 @@
       background: black;
       display: block;
     }
-
-    .btn {
-      padding: 0 8px;
-
-      a {
-        padding: 6px 14px 4px;
-        background: rgb(239 153 205 / 70%); // #c6ef99; // #ef99af
-        border-radius: 16px;
-
-        &::after {
-          content: none;
-        }
-      }
-    }
   }
 
   li {
     list-style: none;
+  }
+
+  li:last-child {
+    padding: 0 8px;
+
+    a {
+      padding: 6px 14px 4px;
+      background: rgb(239 153 205 / 70%); // #c6ef99; // #ef99af
+      border-radius: 16px;
+
+      &::after {
+        content: none;
+      }
+    }
   }
 
   button,
@@ -73,8 +73,7 @@
     @include m.type-tiny;
   }
 
-  button,
-  a.rsvp {
+  button {
     padding: 10px 10px 7px;
     text-transform: uppercase;
     text-align: center;
@@ -103,28 +102,6 @@
 
     &:hover {
       font-style: italic;
-    }
-  }
-
-  a.rsvp {
-    background-color: rgb(255 165 0 / 70%);
-
-    @include m.breakpoint(v.$md) {
-      margin-right: 0.5rem;
-    }
-  }
-}
-
-.right {
-  display: flex;
-  align-items: center;
-
-  span {
-    @include m.type-tiny;
-    font-size: 10px;
-
-    @include m.breakpoint-max(v.$md) {
-      display: none;
     }
   }
 }

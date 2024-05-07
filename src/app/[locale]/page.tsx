@@ -3,7 +3,6 @@ import s from './page.module.scss'
 import { useTranslations } from 'next-intl'
 import { unstable_setRequestLocale } from 'next-intl/server'
 import cn from 'classnames'
-import NavVertical from '@/components/NavVertical/NavVertical'
 import Image from 'next/image'
 
 export default function Home({
@@ -18,7 +17,6 @@ export default function Home({
 
   return (
     <>
-      <NavVertical />
       <main className={s.main}>
         <div className={s.hero}>
           <h1 className="h1">

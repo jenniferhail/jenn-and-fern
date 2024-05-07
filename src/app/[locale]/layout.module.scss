@@ -5,6 +5,43 @@
   background-color: var(--box-bg);
 }
 
+.right {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 0 1rem;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+
+  span {
+    @include m.type-tiny;
+    font-size: 10px;
+
+    @include m.breakpoint-max(v.$md) {
+      display: none;
+    }
+  }
+
+  a.rsvp {
+    @include m.type-tiny;
+    background-color: rgb(255 165 0 / 70%);
+    padding: 10px 10px 7px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: v.$sans;
+    font-size: 10.2px;
+    line-height: 1;
+    letter-spacing: 0.25em;
+    border-radius: 16px;
+
+    @include m.breakpoint(v.$md) {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
 .footer {
   padding-bottom: 3vw;
   position: relative;

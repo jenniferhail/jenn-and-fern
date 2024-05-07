@@ -2,18 +2,16 @@
 import { Link } from '@/navigation'
 import s from './NavVertical.module.scss'
 import cn from 'classnames'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, KeyboardEvent } from 'react'
 
-const NavVertical = () => {
+const NavVertical = ({
+  links,
+}: {
+  links: { link: string; label: string; target?: string }[]
+}) => {
   const [open, setOpen] = useState(false)
 
   useEffect(() => {
-    const handleEscapeKey = (event: KeyboardEvent) => {
-      if (event.key === 'Escape') {
-        setOpen(false)
-      }
-    }
-
     const handleClickOutside = (event: MouseEvent) => {
       if (
         event.target instanceof Node &&
@@ -23,13 +21,18 @@ const NavVertical = () => {
         setOpen(false)
       }
     }
+    const handleEscapeKey = (event: KeyboardEvent) => {
+      if (event.key === 'Escape') {
+        setOpen(false)
+      }
+    }
 
     document.addEventListener('mousedown', handleClickOutside)
-    document.addEventListener('keydown', handleEscapeKey)
+    document.addEventListener('keydown', (event) => handleEscapeKey)
 
     return () => {
       document.removeEventListener('mousedown', handleClickOutside)
-      document.removeEventListener('keydown', handleEscapeKey)
+      document.removeEventListener('keydown', (event) => handleEscapeKey)
     }
   }, [])
 
@@ -37,46 +40,20 @@ const NavVertical = () => {
     <nav className={cn(s.nav, open && s.open)}>
       <button onClick={() => setOpen(!open)}>Menu</button>
       <ul className={s.links}>
-        <li>
-          <Link href="/">Home</Link>
-        </li>
-        <li>
-          <Link href="/schedule">Schedule</Link>
-        </li>
-        <li>
-          <Link href="/travel">Travel</Link>
-        </li>
-        <li>
-          <Link href="/things-to-do">Things To Do</Link>
-        </li>
-        <li>
-          <Link href="/our-story">Our Story</Link>
-        </li>
-        <li>
-          <Link href="/faqs">FAQs</Link>
-        </li>
-        <li>
-          <Link href="/registry">Registry</Link>
-        </li>
-        <li>
-          <Link href="/save-the-date">Save the Date</Link>
-        </li>
+        {links?.map((link, i) => {
+          return (
+            <li key={i}>
+              <Link href={link.link} target={link.target ? link.target : ''}>
+                {link.label}
+              </Link>
+            </li>
+          )
+        })}
+
+        {/*
         <li className={s.btn}>
-          <Link href="http://rsvp.jennandfern.com/" target="_blank">
-            RSVP by July 1st
-          </Link>
-        </li>
+        </li> */}
       </ul>
-      <div className={s.right}>
-        <Link
-          className={s.rsvp}
-          href="http://rsvp.jennandfern.com/"
-          target="_blank"
-        >
-          RSVP
-        </Link>{' '}
-        <span> by 07.01.24</span>
-      </div>
     </nav>
   )
 }
