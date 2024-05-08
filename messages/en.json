@@ -79,11 +79,12 @@
     "heading1": "Getting Here",
     "content1": "<p>The simplest way for many of you will be to fly into DTW and Uber/Lyft to AA or rent a car for full control over your journey. Please let us know if you'd like help making a group for splitting car or Airbnb rentals.</p><p>If you're the adventurous type, you can fly into Chicago and take the Amtrak from Union Station to Ann Arbor. We took the trip for the first time in March and it was really lovely, only around 4 hours and no TSA required. Plan to arrive on Thursday or Friday if you want to go this route.</p>",
     "heading2": "Lodging",
-    "content2": "<p>We recommend staying within a 10-15 minute drive of our ceremony and reception venues, on the east side of the city. Here are a few options, or you can search for a place to stay via Airbnb.</p><p>Hyatt Place Ann Arbor<br></br><a href='https://maps.app.goo.gl/3qzEPuwG1R5w3d77A'>View on map</a></p><p>DoubleTree by Hilton Ann Arbor North<br></br><a href='https://maps.app.goo.gl/hCY7vcCaiq8623pw5'>View on map</a></p><p>Hampton Inn Ann Arbor-South<br></br><a href='https://maps.app.goo.gl/5b4zw1sRtBcW7B3RA'>View on map</a></p>",
+    "content2": "<p>We recommend staying within a 10-15 minute drive of our ceremony and reception venues, on the east side of the city. Here are a few options, or you can search for a place to stay via Airbnb.</p><p>Hyatt Place Ann Arbor<br><a href='https://maps.app.goo.gl/3qzEPuwG1R5w3d77A'>View on map</a></p><p>DoubleTree by Hilton Ann Arbor North</br><a href='https://maps.app.goo.gl/hCY7vcCaiq8623pw5'>View on map</a></p><p>Hampton Inn Ann Arbor-South</br><a href='https://maps.app.goo.gl/5b4zw1sRtBcW7B3RA'>View on map</a></p>",
     "heading3": "After You Arrive",
     "content3": "<p>Check out our <a href='/things-to-do'>Things To Do page</a> for suggestions for sight-seeing, places to eat and more.</p>",
     "button3": "Find Things To Do",
-    "button3link": "/things-to-do"
+    "button3link": "/things-to-do",
+    "view_on_map": "View on Map"
   },
   "Schedule": {
     "title": "Schedule",

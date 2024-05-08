@@ -39,35 +39,35 @@ const faqsEN = [
 
 const faqsES = [
   {
-    title: 'Cuando should I RSVP?',
-    content: `The sooner the better! But please respond no later than July 1st. We have chosen a venue with limited space, so if you think you can't make it, please let us know so we can extend the invite to another guest.`,
+    title: '¿Cuando debo dar mi RSVP?',
+    content: ` Lo mas pronto posible seria lo ideal, pero si puedes responder para el 1 de julio del 2024 seria excelente. Tenemos capacidad limitada de espacio y si piensas que no podrías asistir, déjanos saber con tiempo para poder extender la invitación a otra persona.`,
   },
   {
-    title: 'What should I wear?',
-    content: `Think semi-formal + garden party: Suits and ties, long dresses. Our ceremony will be outdoors, weather permitting, so please plan accordingly, or bring a pair of shoes to swap into for the reception if you'd like. You will have a chance to explore the grounds an hour before the ceremony, through grass and concrete walkways.`,
+    title: '¿Que debo vestir?',
+    content: `Ropa semi formal + fiesta de jardín: Traje y corbata, o vestidos largos. La ceremonia no es bajo techo y el mes de agosto se presta a tener temperaturas templadas. La ceremonia es en un jardín, así que te recomendamos tacones que sean muy finos ya que se anidarían en la grama. Si deseas trae un par de zapatos adicionales por si deseas cambiarte en la recepción. Tendrás la oportunidad de explorar el jardín botánico antes de la ceremonia y el suelo es una combinación de concreto y grama.`,
   },
   {
-    title: 'Where can I park for the ceremony?',
-    content: `Parking is complimentary for our guests. Please check in at the front desk of Matthaei Botanical Gardens inside the visitors center with your parking space number to make sure that you’re included in our reservation.`,
+    title: '¿Dónde puedo estacionar para la ceremonia?',
+    content: `Estacionamiento es complementario para los invitados. Asegúrate de tomar el número del espacio donde te estacionaste y has el check-in en la recepción del jardín botánico (Visitor Center).`,
   },
   {
-    title: 'Where should I park for the reception?',
+    title: '¿Dónde pedo estacionar para la recepción?',
     content:
-      'You can find street parking or use the Liberty Title lot across the street from the venue.',
+      'Estacionamiento para la recepción se puede encontrar al cruzar la calle en el lote de Liberty Title. Este estacionamiento no es complementario, pero es gratuito.',
   },
   {
-    title: 'Can I smoke anywhere at the wedding?',
+    title: '¿Puedo fumar?',
     content:
-      'Smoking is not permitted in any area, inside or out, at our reception or ceremony venues.',
+      'No. No se permite fumar dentro o fueras de las instalaciones del o los eventos.',
   },
   {
-    title: 'What type of food will be served?',
-    content: `We're having mediterranean street food from one of our favorite restaurants in Michigan. Not only is it delicious, it's also clearly labeled for restrictive diets.`,
+    title: '¿Qué tipo de comida habrá?',
+    content: `Se servirá comida mediterránea proveída por uno de nuestros restaurantes favoritos. No tan solo la encontramos exquisita si no también tiene un menú dedicado para personas con restricciones alimenticias.`,
   },
   {
-    title: 'Will alcohol be served?',
+    title: '¿Se servirá alcohol?',
     content:
-      'Yes, wine and beer will be served. There will also be many non-alcoholic options.',
+      'Si, tendremos vino y cerveza. También tendremos muchas opciones sin alcohol.',
   },
 ]
 
