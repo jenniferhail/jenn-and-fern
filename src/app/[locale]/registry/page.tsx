@@ -25,7 +25,7 @@ export default function Home({
         <p>{t('content')}</p>
         <Button
           href="www.zola.com/registry/hailvillavicenciowedding"
-          text="See our registry"
+          text={t('cta')}
         />
         <Link
           href="www.zola.com/registry/hailvillavicenciowedding"
