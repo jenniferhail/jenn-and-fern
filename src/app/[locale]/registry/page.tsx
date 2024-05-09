@@ -1,8 +1,10 @@
 import s from './page.module.scss'
 import { useTranslations } from 'next-intl'
 import { unstable_setRequestLocale } from 'next-intl/server'
+import Button from '@/components/Button/Button'
+import Image from 'next/image'
+import Registry from '/public/Zola-Registry.jpg'
 import { Link } from '@/navigation'
-import Script from 'next/script'
 
 export default function Home({
   params: { locale },
@@ -21,14 +23,16 @@ export default function Home({
           <i>{t('title')}</i>
         </h1>
         <p>{t('content')}</p>
-        <a
-          className="zola-registry-embed"
+        <Button
           href="www.zola.com/registry/hailvillavicenciowedding"
-          data-registry-key="hailvillavicenciowedding"
+          text="See our registry"
+        />
+        <Link
+          href="www.zola.com/registry/hailvillavicenciowedding"
+          target="_blank"
         >
-          {t('embed_title')}
-        </a>
-        <Script src="/registry.js" />
+          <Image src={Registry} alt="Our wedding registry" />
+        </Link>
       </section>
     </>
   )

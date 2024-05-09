@@ -10,6 +10,12 @@ function LocaleButton({ locale }: { locale: string }) {
   const router = useRouter()
   const currentPath = usePathname()
 
+  const handleClick = (item: string) => {
+    if (item !== locale) {
+      router.push(`/${item}${currentPath}`)
+    }
+  }
+
   return (
     <div className={s.buttons}>
       {locales?.map((item, key) => {
@@ -18,11 +24,7 @@ function LocaleButton({ locale }: { locale: string }) {
             className={cn(s.language, {
               [s.current]: item === locale,
             })}
-            onClick={
-              item !== locale
-                ? () => router.push(`/${item}${currentPath}`)
-                : undefined
-            }
+            onClick={() => handleClick(item)}
             key={key}
           >
             {item?.toUpperCase()}
