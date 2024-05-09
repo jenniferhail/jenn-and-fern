@@ -1,0 +1,155 @@
+{
+  "Global": {
+    "menu": "Menu",
+    "home": "Home",
+    "schedule": "Schedule",
+    "travel": "Travel",
+    "things": "Things to do",
+    "our_story": "Our story",
+    "faqs": "FAQs",
+    "registry": "Registry",
+    "save_the_date": "Save the Date",
+    "rsvp": "RSVP by July 1st",
+    "by": "by",
+    "made": "Website made by ",
+    "bride": "the bride",
+    "translated": ", Translated by ",
+    "groom": "the groom",
+    "supervised": "& supervised by ",
+    "cat": "their cat Theo"
+  },
+  "Home": {
+    "initials": "J + F",
+    "date": "Aug 10",
+    "date_full": "August 10, 2024",
+    "year": "2024",
+    "city": "Ann Arbor",
+    "state": "Michigan",
+    "title": "Join us on a <br></br> <i>Saturday</i> in August, <br></br> in the middle of a <br></br> perennial <i>garden</i>, <br></br> as we celebrate <br></br> our <i>love story</i>.",
+    "cta": "Save The Date",
+    "rsvp": "RSVP by July 1st",
+    "large_text": "Join us in celebration",
+    "wedding": "For the wedding of <br></br>Jennifer Hail & <br></br>Fernando Villavicencio",
+    "ceremony_title": "Ceremony",
+    "ceremony_time": "5:30 p.m.",
+    "ceremony_location": "Matthaei Botanical Gardens",
+    "reception_title": "Reception",
+    "reception_time": "6:30 p.m.",
+    "reception_location": "StudioStudio",
+    "details": "See details"
+  },
+  "SaveTheDate": {
+    "date": "August 10, 2024",
+    "location": "Ann Arbor, Michigan",
+    "paragraph1": "In place of traditionally mailed paper goods, we’re going digital and using this e-mail list for everything you need to know about our wedding. It’s 2024—let’s save some trees (and money)!",
+    "paragraph2": "You’ll receive updates when we post new information on our website, calendar invites to our ceremony and reception, and more. Written by Jenn & Fern, your bride and groom-to-be, get ready for some fun email to hit your inbox.",
+    "paragraph3": "In the coming weeks, we will add more information to our website, including the RSVP form, hotel information, ceremony start time, suggested dress code, etc.",
+    "paragraph4": "To start, fill in your latest contact info below, so we can keep you in the loop and—after it’s all said and done—send you a thank you card for celebrating the best day with us.",
+    "first_name": "First Name",
+    "last_name": "Last Name",
+    "email": "Your email",
+    "address_1": "Address Line 1",
+    "address_2": "Address Line 2",
+    "city": "City",
+    "state": "State",
+    "zip": "Zip Code",
+    "country": "Country",
+    "phone": "Phone Number",
+    "whatsapp": "WhatsApp",
+    "submit": "Submit",
+    "error": "What happened?! Make sure to check that your email is correct and avoid using autofill."
+  },
+  "ThankYou": {
+    "title": "Thank You",
+    "subtitle": "Please check your inbox for a welcome message!",
+    "cta": "Go Home"
+  },
+  "OurStory": {
+    "title": "Our Story",
+    "content": "<p>The story of Jenn and Fer is one of those \"God works in mysterious ways\" tales. In September 2018, through circumstances shaped by availability in his rotational program, Fernando found himself moving to Louisville, KY, instead of the other option, Chicago, IL. Little did he know, this change would become a pivotal moment in his life.</p><p>A few months later while on a trip to Mexico, Jenn rekindled her love for Latin music, a passion that led her to seek out salsa dancing lessons as soon as she returned home. She began attending classes and social dances held on Wednesdays at Play—a decision that would serendipitously align with Fernando's path.</p><p>Come January 2, 2019, Fernando, looking to broaden his horizons, made the choice to step out and immerse himself in the world of salsa. He discovered that Play also hosted lessons and a social dance every Wednesday. It was at this local bar, on the dance floor, where the rhythm of salsa would orchestrate the steps leading Jenn and Fer into each other's lives.</p>"
+  },
+  "Registry": {
+    "title": "Registry",
+    "content": "We are so excited to celebrate our special day with all of you and are truly grateful for any contributions towards our future. If you wish to give a gift, we would be thrilled to receive something from our registry below. Thank you so much!",
+    "embed_title": "Refresh the page if you see this message",
+    "cta": "See our registry"
+  },
+  "Travel": {
+    "title": "Travel",
+    "intro": "<p>Ann Arbor is a beautiful college town only 40 minutes west of Detroit. Jen says the tree-lined neighborhoods feel a lot like Louisville, KY — where she lived before moving to Michigan.</p><p>The summers here are absolutely perfect — especially after waiting all winter long. If you have the extra time, we highly recommend extending your trip and visiting Lake Michigan, or even venturing north to the UP (Upper Penninsula).</p>",
+    "heading1": "Getting Here",
+    "content1": "<p>The simplest way for many of you will be to fly into DTW and Uber/Lyft to AA or rent a car for full control over your journey. Please let us know if you'd like help making a group for splitting car or Airbnb rentals.</p><p>If you're the adventurous type, you can fly into Chicago and take the Amtrak from Union Station to Ann Arbor. We took the trip for the first time in March and it was really lovely, only around 4 hours and no TSA required. Plan to arrive on Thursday or Friday if you want to go this route.</p>",
+    "heading2": "Lodging",
+    "content2": "<p>We recommend staying within a 10-15 minute drive of our ceremony and reception venues, on the east side of the city. Here are a few options, or you can search for a place to stay via Airbnb.</p><p>Hyatt Place Ann Arbor<br><a href='https://maps.app.goo.gl/3qzEPuwG1R5w3d77A'>View on map</a></p><p>DoubleTree by Hilton Ann Arbor North</br><a href='https://maps.app.goo.gl/hCY7vcCaiq8623pw5'>View on map</a></p><p>Hampton Inn Ann Arbor-South</br><a href='https://maps.app.goo.gl/5b4zw1sRtBcW7B3RA'>View on map</a></p>",
+    "heading3": "After You Arrive",
+    "content3": "<p>Check out our <a href='/things-to-do'>Things To Do page</a> for suggestions for sight-seeing, places to eat and more.</p>",
+    "button3": "Find Things To Do",
+    "button3link": "/things-to-do",
+    "view_on_map": "View on Map"
+  },
+  "Schedule": {
+    "title": "Schedule",
+    "intro": "<p>We are overjoyed to have you join us on this beautiful journey as we become partners for life. It means the world to us to share in the warmth of your company on our special day. We have chosen a garden venue for our ceremony and a creative studio space for our reception.</p><p>To help you navigate our day with ease, please see the schedule below.</p>",
+    "heading1": "Welcome Party",
+    "content1": "<p>We know most of you are traveling to Michigan for the wedding, so we want to welcome everyone and kick off a fun weekend with a little welcome party! You can expect a casual, summer house party with home-made food (likely Ecuadorian style, aka made by Fernando), cold drinks and music in our backyard.</p>",
+    "location1": {
+      "title": "Location:",
+      "content": "TBD!"
+    },
+    "time1": {
+      "title": "Time:",
+      "content": "Friday, August 9 from 6pm to 8pm"
+    },
+    "directions1": {
+      "title": "Get Directions",
+      "link": "https://www.google.com/maps/dir//Matthaei+Botanical+Gardens,+1800+N+Dixboro+Rd,+Ann+Arbor,+MI+48105/@42.3081156,-83.6923869,12.88z/data=!4m9!4m8!1m0!1m5!1m1!1s0x883cabe478937947:0x98f029f1869e4017!2m2!1d-83.6632035!2d42.3022338!3e0?entry=ttu"
+    },
+    "heading2": "Ceremony",
+    "content2": "<p>Infused with natural charm, the perennial garden at the Matthaei Botanical Gardens remains a favorite setting for treasured moments. Its tranquil beauty adds an enchanting touch to special occasions. We're excited to say \"I do\" in a location we can visit and enjoy year after year.</p>",
+    "location2": {
+      "title": "Location:",
+      "content": "Kimberly Maged Perennial Garden<br></br>Matthaei Botanical Gardens<br></br>1800 N Dixboro Road<br></br>Ann Arbor, MI 48105"
+    },
+    "time2": {
+      "title": "Time:",
+      "content": "Saturday, August 10 at 4:30pm<br></br>Guests can experience the grounds and spend time in the gardens before our ceremony begins at 5:30pm."
+    },
+    "directions2": {
+      "title": "Get Directions",
+      "link": "https://www.google.com/maps/dir//Matthaei+Botanical+Gardens,+1800+N+Dixboro+Rd,+Ann+Arbor,+MI+48105/@42.3081156,-83.6923869,12.88z/data=!4m9!4m8!1m0!1m5!1m1!1s0x883cabe478937947:0x98f029f1869e4017!2m2!1d-83.6632035!2d42.3022338!3e0?entry=ttu"
+    },
+    "heading3": "Reception",
+    "content3": "The party continues at StudioStudio with an evening filled with heartfelt toasts, dinner from one of our favorite restaurants in Michigan and, of course, a good time on the dance floor. Nestled beside York Restaurant—an Ann Arbor favorite that sells everything one could need for fancy charcuterie—StudioStudio is an open and airy blank canvas for creative minds to use however they can imagine.",
+    "location3": {
+      "title": "Location:",
+      "content": "StudioStudio<br></br>1946 Packard Street<br></br>Ann Arbor, MI 48104"
+    },
+    "time3": {
+      "title": "Time:",
+      "content": "Saturday, August 10 from 6:30pm to 11:30pm"
+    },
+    "directions3": {
+      "title": "Get Directions",
+      "link": "https://www.google.com/maps/dir//StudioStudio,+1946+Packard+St,+Ann+Arbor,+MI+48104/@42.257521,-83.7305617,17z/data=!4m9!4m8!1m0!1m5!1m1!1s0x883caff281f80b77:0x678eeb6a629a1558!2m2!1d-83.7279868!2d42.2575171!3e0?entry=ttu"
+    },
+    "heading4": "Let us know if you can make it",
+    "content4": "",
+    "button4": "RSVP by July 1st",
+    "button4link": "http://rsvp.jennandfern.com/"
+  },
+  "FAQs": {
+    "title": "Your Questions, Answered",
+    "heading1": "Did we miss a question?",
+    "content1": "<p>Send one of us a text and we'll add it to the list here.</p>"
+  },
+  "Things To Do": {
+    "title": "Things To Do",
+    "intro": "<p>We've lived in Ann Arbor for three years and have made a list of our favorite spots, but there are still so many on our wish list.</p><p>See our recommendations below, or check out <a href='https://www.annarbor.org/things-to-do/' target='_blank'>this resource</a> for more.</p>",
+    "coffee": "Coffee",
+    "brunch": "Brunch or lunch",
+    "food": "Food",
+    "drinks": "Drinks",
+    "in": "In Ann Arbor",
+    "out": "Outside Ann Arbor"
+  }
+}

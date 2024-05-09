@@ -1,0 +1,24 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.wrapper {
+  background-image: url(/background-bw.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  backdrop-filter: brightness(0.85);
+  background-attachment: fixed;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-items: center;
+  padding: 5rem 1rem 1rem;
+  min-height: 100vh;
+
+  @include m.breakpoint(v.$md) {
+    padding: 6rem;
+  }
+}

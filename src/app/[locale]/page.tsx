@@ -1,9 +1,9 @@
+import { Link } from '@/navigation'
+import s from './page.module.scss'
 import { useTranslations } from 'next-intl'
 import { unstable_setRequestLocale } from 'next-intl/server'
-import s from './page.module.scss'
 import cn from 'classnames'
-import Box from '@/components/Box/Box'
-import { Link } from '@/navigation'
+import Image from 'next/image'
 
 export default function Home({
   params: { locale },
@@ -16,31 +16,69 @@ export default function Home({
   const t = useTranslations('Home')
 
   return (
-    <Box>
-      <div className={cn(s.step1)}>
-        <div className={cn(s.top, s.tiny)}>
-          <span>{t('date')}</span>
-          <span className={s.center}>{t('initials')}</span>
-          <span>{t('year')}</span>
+    <>
+      <main className={s.main}>
+        <div className={s.hero}>
+          <h1 className="h1">
+            <i>{t('date_full')}</i>
+          </h1>
+          <span>
+            {t('city')}, {t('state')}
+          </span>
         </div>
-
-        <div className={s.middle}>
-          <h1>
-            {t.rich('title', {
+        <section className={s.section}>
+          <h2 className={s.large}>{t('large_text')}</h2>
+          <h2>
+            {t.rich('wedding', {
               br: () => <br />,
               i: (chunks) => <i>{chunks}</i>,
             })}
-          </h1>
-          <Link href={`/save-the-date`} className="button">
-            {t('cta')}
+          </h2>
+          <div className={s.cards}>
+            <div className={cn(s.card, s.wedding)}>
+              <Link href="/schedule">
+                <h2>{t('ceremony_title')}</h2>
+                {t('ceremony_time')}
+                <br />
+                <span>{t('ceremony_location')}</span>
+                <span className={s.details}>{t('details')}</span>
+              </Link>
+              <div className={s.img}>
+                <Image
+                  src="/wedding.jpg"
+                  alt="Jenn & Fern smiling at a wedding"
+                  width={1000}
+                  height={1260}
+                />
+              </div>
+            </div>
+            <div className={cn(s.card, s.ecuador)}>
+              <Link href="/schedule">
+                <h2>{t('reception_title')}</h2>
+                {t('reception_time')}
+                <br />
+                <span>{t('reception_location')}</span>
+                <span className={s.details}>{t('details')}</span>
+              </Link>
+              <div className={s.img}>
+                <Image
+                  src="/ecuador.jpeg"
+                  alt="Jenn & Fern smiling with alpacas in Ecuador"
+                  width={1000}
+                  height={1333}
+                />
+              </div>
+            </div>
+          </div>
+          <Link
+            className={cn(s.rsvp, 'button')}
+            href="http://rsvp.jennandfern.com/"
+            target="_blank"
+          >
+            {t('rsvp')}
           </Link>
-        </div>
-
-        <div className={cn(s.bottom, s.tiny)}>
-          <span>{t('city')}</span>
-          <span>{t('state')}</span>
-        </div>
-      </div>
-    </Box>
+        </section>
+      </main>
+    </>
   )
 }

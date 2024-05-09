@@ -1,15 +1,106 @@
 @use 'variables' as v;
 @use 'mixins' as m;
 
-.main {
+.body {
+  background-color: var(--box-bg);
+}
+
+.right {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 0 1rem;
+  z-index: 99;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  align-items: center;
-  padding: 5rem 1rem 1rem;
-  min-height: 100vh;
 
   @include m.breakpoint(v.$md) {
-    padding: 6rem;
+    padding: 0 30px;
+  }
+
+  span {
+    @include m.type-tiny;
+    font-size: 10px;
+
+    @include m.breakpoint-max(v.$md) {
+      display: none;
+    }
+  }
+
+  a.rsvp {
+    @include m.type-tiny;
+    background-color: rgb(255 165 0 / 70%);
+    padding: 10px 10px 7px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: v.$sans;
+    font-size: 10.2px;
+    line-height: 1;
+    letter-spacing: 0.25em;
+    border-radius: 16px;
+
+    @include m.breakpoint(v.$md) {
+      margin-right: 0.5rem;
+    }
+  }
+}
+
+.footer {
+  padding-bottom: 3vw;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  height: calc(34vw + 106px + 40px);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  span {
+    font-family: v.$script;
+    font-size: 32vw;
+    line-height: 0.5;
+    position: relative;
+    left: -5%;
+    white-space: nowrap;
+  }
+}
+
+.credit {
+  @include m.type-tiny;
+  font-size: 10px;
+  text-align: center;
+  padding: 1rem 2rem 0;
+  position: relative;
+  z-index: 2;
+
+  p {
+    margin: 0;
+    line-height: 2;
+    text-wrap: balance;
+  }
+
+  a {
+    border: 1px solid transparent;
+    padding: 6px 10px 4px;
+    border-radius: 16px;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+
+    &:hover {
+      background-color: transparent;
+      border: 1px solid;
+    }
+  }
+
+  .bride {
+    background-color: rgb(198 239 153 / 70%);
+  }
+  .groom {
+    background-color: rgb(153 239 218 / 70%);
+  }
+  .cat {
+    background-color: rgb(204 153 239 / 60%);
   }
 }

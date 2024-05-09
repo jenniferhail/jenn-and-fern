@@ -2,22 +2,18 @@
 @use '../styles/mixins' as m;
 
 .buttons {
-  position: absolute;
-  top: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
   display: flex;
-
-  @include m.breakpoint(v.$md) {
-    left: 1rem;
-    transform: none;
-  }
+  justify-content: center;
+  position: relative;
+  z-index: 100;
+  margin-top: 1rem;
+  gap: 0.5rem;
 }
 
 .language {
   border-radius: 0;
   border: none;
-  border-bottom: 1px solid rgba(0, 0, 0, 0);
+  border: 1px solid transparent;
   background-color: rgba(242, 240, 237, 0);
   color: rgb(var(--foreground-rgb));
   font-family: v.$sans;
@@ -27,11 +23,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 32px;
+  height: 32px;
   cursor: pointer;
+  padding: 12px 10px 8px 11px;
+  position: relative;
+  transition: all 0.2s ease;
 
   &.current {
-    border-bottom: 1px solid rgb(var(--foreground-rgb));
+    border: 1px solid rgb(var(--foreground-rgb));
+  }
+
+  &:hover,
+  &:focus {
+    border: 1px solid transparent;
+    background-color: white;
   }
 }

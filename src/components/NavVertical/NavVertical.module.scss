@@ -1,0 +1,107 @@
+@use 'variables' as v;
+@use 'mixins' as m;
+
+.nav {
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 1rem;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @include m.breakpoint(v.$md) {
+    padding: 0 30px;
+  }
+
+  &.open {
+    border-bottom: none;
+
+    .links {
+      opacity: 1;
+      pointer-events: all;
+      background-color: var(--box-bg);
+    }
+  }
+
+  .links {
+    border: 1px solid;
+    position: absolute;
+    left: calc(30px);
+    top: 60px;
+    opacity: 0;
+    pointer-events: none;
+    padding: 8px 0 10px;
+
+    @include m.breakpoint(v.$md) {
+      left: calc(30px + 32px);
+    }
+
+    a:after {
+      content: '';
+      height: 1px;
+      width: 100%;
+      background: black;
+      display: block;
+    }
+  }
+
+  li {
+    list-style: none;
+  }
+
+  li:last-child {
+    padding: 0 8px;
+
+    a {
+      padding: 6px 14px 4px;
+      background: rgb(239 153 205 / 70%); // #c6ef99; // #ef99af
+      border-radius: 16px;
+
+      &::after {
+        content: none;
+      }
+    }
+  }
+
+  button,
+  span,
+  a {
+    @include m.type-tiny;
+  }
+
+  button {
+    padding: 10px 10px 7px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: v.$sans;
+    font-size: 10.2px;
+    line-height: 1;
+    letter-spacing: 0.25em;
+    border-radius: 16px;
+  }
+
+  button {
+    display: inline-block;
+    background-color: transparent;
+    border: 1px solid;
+    color: rgb(var(--foreground-rgb));
+    cursor: pointer;
+
+    @include m.breakpoint-max(v.$md) {
+      background-color: var(--box-bg);
+    }
+  }
+
+  a {
+    display: block;
+    padding: 8px 20px;
+
+    &:hover {
+      font-style: italic;
+    }
+  }
+}

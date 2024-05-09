@@ -55,7 +55,7 @@ const SaveTheDateForm = ({ labels, locale }: FormLabels) => {
       })
 
       if (response.ok) {
-        router.push('/thank-you')
+        router.push('/save-the-date/thank-you')
       } else {
         setError(labels.error)
       }
