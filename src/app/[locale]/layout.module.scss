@@ -15,6 +15,10 @@
   display: flex;
   align-items: center;
 
+  @include m.breakpoint(v.$md) {
+    padding: 0 30px;
+  }
+
   span {
     @include m.type-tiny;
     font-size: 10px;
