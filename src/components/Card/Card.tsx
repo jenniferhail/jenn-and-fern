@@ -1,9 +1,9 @@
-import Draggable from '../Draggable/Draggable'
 import s from './Card.module.scss'
+import Draggable from 'react-draggable'
 
 const Card = () => {
   return (
-    <Draggable initialLeft={97} initialTop={0}>
+    <Draggable position={{ x: 97, y: 0 }}>
       <div className={s.card}>
         <div className={s.inner}>
           <div className={s.top}>08.10.2024</div>

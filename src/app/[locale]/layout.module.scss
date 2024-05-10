@@ -47,15 +47,20 @@
 }
 
 .footer {
-  padding-bottom: 3vw;
+  padding-bottom: 8vw;
   position: relative;
   text-align: center;
   width: 100%;
-  height: calc(34vw + 106px + 40px);
+  height: calc(36vw + 106px + 40px);
   overflow: hidden;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
+  @include m.breakpoint(v.$md) {
+    padding-bottom: 3vw;
+    height: calc(34vw + 106px + 40px);
+  }
 
   span {
     font-family: v.$script;
@@ -77,8 +82,12 @@
 
   p {
     margin: 0;
-    line-height: 2;
+    line-height: 2.5;
     text-wrap: balance;
+
+    @include m.breakpoint(v.$md) {
+      line-height: 2;
+    }
   }
 
   a {

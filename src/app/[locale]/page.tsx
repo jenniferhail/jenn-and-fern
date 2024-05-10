@@ -45,7 +45,7 @@ export default function Home({
               </Link>
               <div className={s.img}>
                 <Image
-                  src="/wedding.jpg"
+                  src="/photos/wedding.jpg"
                   alt="Jenn & Fern smiling at a wedding"
                   width={1000}
                   height={1260}
@@ -62,7 +62,7 @@ export default function Home({
               </Link>
               <div className={s.img}>
                 <Image
-                  src="/ecuador.jpeg"
+                  src="/photos/ecuador.jpeg"
                   alt="Jenn & Fern smiling with alpacas in Ecuador"
                   width={1000}
                   height={1333}

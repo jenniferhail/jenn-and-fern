@@ -6,7 +6,7 @@ import Accordion from '@/components/Accordion/Accordion'
 const faqsEN = [
   {
     title: 'When should I RSVP?',
-    content: `The sooner the better! But please respond no later than July 1st. We have chosen a venue with limited space, so if you think you can't make it, please let us know so we can extend the invite to another guest.`,
+    content: `The sooner the better! Our venue needs to know a final headcount by no later than July 1st.`,
   },
   {
     title: 'What should I wear?',
@@ -40,7 +40,7 @@ const faqsEN = [
 const faqsES = [
   {
     title: '¿Cuando debo dar mi RSVP?',
-    content: ` Lo mas pronto posible seria lo ideal, pero si puedes responder para el 1 de julio del 2024 seria excelente. Tenemos capacidad limitada de espacio y si piensas que no podrías asistir, déjanos saber con tiempo para poder extender la invitación a otra persona.`,
+    content: `Lo mas pronto posible seria lo ideal. Nuestro lugar necesita conocer un recuento final a más tarde el 1 de julio.`,
   },
   {
     title: '¿Que debo vestir?',
