@@ -24,11 +24,11 @@ export default function Home({
         </h1>
         <p>{t('content')}</p>
         <Button
-          href="www.zola.com/registry/hailvillavicenciowedding"
+          href="https://www.zola.com/registry/hailvillavicenciowedding"
           text={t('cta')}
         />
         <Link
-          href="www.zola.com/registry/hailvillavicenciowedding"
+          href="https://www.zola.com/registry/hailvillavicenciowedding"
           target="_blank"
         >
           <Image src={Registry} alt="Our wedding registry" />
