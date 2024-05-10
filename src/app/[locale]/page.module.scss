@@ -5,7 +5,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 100vh;
+  min-height: 100dvh;
   padding: 60px 1rem 30px;
 
   @include m.breakpoint(v.$md) {
@@ -19,7 +19,6 @@
   background-repeat: no-repeat;
   background-position: center;
   backdrop-filter: brightness(0.85);
-  background-attachment: fixed;
   border-radius: 16px;
   display: flex;
   flex-direction: column;
@@ -28,7 +27,12 @@
   aspect-ratio: 16/9;
   width: 100%;
   text-align: center;
-  height: calc(100vh - 60px * 2);
+  height: calc(100vh - 60px * 4);
+
+  @include m.breakpoint(860px) {
+    background-attachment: fixed;
+    height: calc(100vh - 60px * 2.5);
+  }
 
   h1,
   span {
@@ -41,11 +45,15 @@
 }
 
 .section {
-  margin-top: -5vw;
+  margin-top: 2vw;
   margin-bottom: 8rem;
   text-align: center;
   width: 100%;
   position: relative;
+
+  @include m.breakpoint(860px) {
+    margin-top: -5vw;
+  }
 
   .h2,
   h2 {
