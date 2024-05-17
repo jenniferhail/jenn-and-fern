@@ -44,7 +44,7 @@ const faqsES = [
   },
   {
     title: '¿Que debo vestir?',
-    content: `Ropa semi formal + fiesta de jardín: Traje y corbata, o vestidos largos. La ceremonia no es bajo techo y el mes de agosto se presta a tener temperaturas templadas. La ceremonia es en un jardín, así que te recomendamos tacones que sean muy finos ya que se anidarían en la grama. Si deseas trae un par de zapatos adicionales por si deseas cambiarte en la recepción. Tendrás la oportunidad de explorar el jardín botánico antes de la ceremonia y el suelo es una combinación de concreto y grama.`,
+    content: `Ropa semi formal + fiesta de jardín: Traje y corbata, o vestidos largos. La ceremonia no es bajo techo y el mes de agosto se presta a tener temperaturas templadas. La ceremonia es en un jardín, así que te recomendamos tacones que no sean muy finos ya que se anidarían en la grama. Si deseas trae un par de zapatos adicionales por si deseas cambiarte en la recepción. Tendrás la oportunidad de explorar el jardín botánico antes de la ceremonia y el suelo es una combinación de concreto y grama.`,
   },
   {
     title: '¿Dónde puedo estacionar para la ceremonia?',
